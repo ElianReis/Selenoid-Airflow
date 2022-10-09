@@ -1,0 +1,29 @@
+[2022-09-26T02:55:35.027+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tudaco.prep scheduled__2022-08-01T00:00:00+00:00 [queued]>
+[2022-09-26T02:55:35.037+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tudaco.prep scheduled__2022-08-01T00:00:00+00:00 [queued]>
+[2022-09-26T02:55:35.037+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T02:55:35.038+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-09-26T02:55:35.038+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T02:55:35.050+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): prep> on 2022-08-01 00:00:00+00:00
+[2022-09-26T02:55:35.054+0000] {standard_task_runner.py:54} INFO - Started process 235 to run task
+[2022-09-26T02:55:35.059+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tudaco', 'prep', 'scheduled__2022-08-01T00:00:00+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp0qowawvs']
+[2022-09-26T02:55:35.060+0000] {standard_task_runner.py:83} INFO - Job 38: Subtask prep
+[2022-09-26T02:55:35.061+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-09-26T02:55:35.572+0000] {task_command.py:384} INFO - Running <TaskInstance: tudaco.prep scheduled__2022-08-01T00:00:00+00:00 [running]> on host 8600278d5a66
+[2022-09-26T02:55:35.665+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tudaco
+AIRFLOW_CTX_TASK_ID=prep
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-01T00:00:00+00:00
+[2022-09-26T02:55:35.666+0000] {tasks.py:113} INFO - Reading the last request file for day 26/09/2022
+[2022-09-26T02:55:36.161+0000] {tasks.py:92} INFO - Cleaning the column NM_INSUMO
+[2022-09-26T02:55:36.434+0000] {tasks.py:132} INFO - Filtering for BP 92054 and period ['M10']
+[2022-09-26T02:55:36.457+0000] {tasks.py:43} INFO - Defining DEC to export information
+[2022-09-26T02:55:36.491+0000] {tasks.py:140} INFO - Saved prep dataframe in ./data_output/TUDACO/coleta_2022/coleta_setembro/coleta_3_dec/saida_2022_09_26
+[2022-09-26T02:55:36.495+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-09-26T02:55:36.515+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=tudaco, task_id=prep, execution_date=20220801T000000, start_date=20220926T025535, end_date=20220926T025536
+[2022-09-26T02:55:36.555+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-09-26T02:55:36.646+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

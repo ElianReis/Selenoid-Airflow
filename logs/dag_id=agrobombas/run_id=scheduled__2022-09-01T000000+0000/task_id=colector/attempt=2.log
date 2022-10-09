@@ -1,0 +1,60 @@
+[2022-10-03T12:23:31.402+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: agrobombas.colector scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-03T12:23:31.413+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: agrobombas.colector scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-03T12:23:31.413+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-03T12:23:31.414+0000] {taskinstance.py:1363} INFO - Starting attempt 2 of 2
+[2022-10-03T12:23:31.414+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-03T12:23:31.428+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-09-01 00:00:00+00:00
+[2022-10-03T12:23:31.433+0000] {standard_task_runner.py:54} INFO - Started process 2389 to run task
+[2022-10-03T12:23:31.435+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'agrobombas', 'colector', 'scheduled__2022-09-01T00:00:00+00:00', '--job-id', '377', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpr9gnirun']
+[2022-10-03T12:23:31.436+0000] {standard_task_runner.py:83} INFO - Job 377: Subtask colector
+[2022-10-03T12:23:31.437+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-10-03T12:23:32.002+0000] {task_command.py:384} INFO - Running <TaskInstance: agrobombas.colector scheduled__2022-09-01T00:00:00+00:00 [running]> on host a4a362a654c5
+[2022-10-03T12:23:32.066+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=agrobombas
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-01T00:00:00+00:00
+[2022-10-03T12:23:32.067+0000] {tasks.py:39} INFO - Defining DEC to export information
+[2022-10-03T12:23:32.073+0000] {tasks.py:353} INFO - Reading prep dataframe
+[2022-10-03T12:23:32.082+0000] {tasks.py:146} INFO - Instantiating the Browser with the requested settings
+[2022-10-03T12:23:43.704+0000] {tasks.py:160} INFO - Browser configured
+[2022-10-03T12:23:43.708+0000] {tasks.py:283} INFO - Removing nan URL values
+[2022-10-03T12:23:43.738+0000] {tasks.py:284} INFO - Requested prices before: 92
+[2022-10-03T12:23:43.765+0000] {tasks.py:289} INFO - Requested prices after: 88
+[2022-10-03T12:28:23.904+0000] {tasks.py:386} INFO - Skipping element errors to: https://www.agrobombas.com.br/index.php?route=product/product&product_id=355&search=caixa+luz&page=2
+[2022-10-03T12:28:23.905+0000] {tasks.py:387} INFO - Error: Message: session timed out or not found
+
+[2022-10-03T12:28:23.905+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:28:23.910+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/tasks.py", line 396, in colector
+    path=path,
+  File "/opt/airflow/dags/tasks.py", line 325, in printer
+    f"{path}/prints/{elementar}_{nome}_{date.strftime('%d-%m-%Y')}.png"
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 951, in save_screenshot
+    return self.get_screenshot_as_file(filename)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 926, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 962, in get_screenshot_as_png
+    return b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 974, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: session timed out or not found
+
+[2022-10-03T12:28:23.930+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=agrobombas, task_id=colector, execution_date=20220901T000000, start_date=20221003T122331, end_date=20221003T122823
+[2022-10-03T12:28:23.953+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 377 for task colector (Message: session timed out or not found
+; 2389)
+[2022-10-03T12:28:23.998+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-10-03T12:28:24.029+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

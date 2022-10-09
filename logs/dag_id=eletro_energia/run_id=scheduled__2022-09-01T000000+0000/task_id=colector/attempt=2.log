@@ -1,0 +1,104 @@
+[2022-10-03T12:47:15.707+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: eletro_energia.colector scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-03T12:47:15.722+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: eletro_energia.colector scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-03T12:47:15.723+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-03T12:47:15.723+0000] {taskinstance.py:1363} INFO - Starting attempt 2 of 2
+[2022-10-03T12:47:15.724+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-03T12:47:15.742+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-09-01 00:00:00+00:00
+[2022-10-03T12:47:15.751+0000] {standard_task_runner.py:54} INFO - Started process 852 to run task
+[2022-10-03T12:47:15.754+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'eletro_energia', 'colector', 'scheduled__2022-09-01T00:00:00+00:00', '--job-id', '386', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmppmj_945n']
+[2022-10-03T12:47:15.755+0000] {standard_task_runner.py:83} INFO - Job 386: Subtask colector
+[2022-10-03T12:47:15.756+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-10-03T12:47:16.411+0000] {task_command.py:384} INFO - Running <TaskInstance: eletro_energia.colector scheduled__2022-09-01T00:00:00+00:00 [running]> on host 9a36b0424536
+[2022-10-03T12:47:16.557+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=eletro_energia
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-01T00:00:00+00:00
+[2022-10-03T12:47:16.565+0000] {tasks.py:39} INFO - Defining DEC to export information
+[2022-10-03T12:47:16.589+0000] {tasks.py:353} INFO - Reading prep dataframe
+[2022-10-03T12:47:16.608+0000] {tasks.py:146} INFO - Instantiating the Browser with the requested settings
+[2022-10-03T12:47:20.266+0000] {tasks.py:160} INFO - Browser configured
+[2022-10-03T12:47:20.270+0000] {tasks.py:283} INFO - Removing nan URL values
+[2022-10-03T12:47:20.275+0000] {tasks.py:284} INFO - Requested prices before: 34
+[2022-10-03T12:47:20.285+0000] {tasks.py:289} INFO - Requested prices after: 34
+[2022-10-03T12:47:32.701+0000] {tasks.py:383} INFO - Price of 1572035 - LAMPADADEVAPORDESODIOALTAPRESSAO: R$ 39,00
+[2022-10-03T12:47:32.703+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:47:36.366+0000] {tasks.py:383} INFO - Price of 1569029 - INTERRUPTORINTERMEDIARIO: R$ 23,15
+[2022-10-03T12:47:36.367+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:47:45.190+0000] {tasks.py:383} INFO - Price of 1569040 - QUADRODEDISTRIBUICAODEEMBUTIREMPVC: R$ 97,92
+[2022-10-03T12:47:45.191+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:47:47.988+0000] {tasks.py:383} INFO - Price of 1572030 - DISJUNTORTRIPOLARDECAIXAMOLDADA: R$ 192,50
+[2022-10-03T12:47:47.989+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:47:51.031+0000] {tasks.py:383} INFO - Price of 1569039 - QUADRODEDISTRIBUICAO: R$ 51,84
+[2022-10-03T12:47:51.032+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:47:53.270+0000] {tasks.py:383} INFO - Price of 1569034 - LUMINARIAPLAFONDELED: R$ 47,00
+[2022-10-03T12:47:53.271+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:47:55.339+0000] {tasks.py:383} INFO - Price of 1572033 - LUMINARIAQUADRADADICROICA: R$ 19,00
+[2022-10-03T12:47:55.339+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:47:57.730+0000] {tasks.py:383} INFO - Price of 1569041 - QUADRODEDISTRIBUICAO: R$ 48,63
+[2022-10-03T12:47:57.731+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:00.176+0000] {tasks.py:383} INFO - Price of 1569044 - CONJUNTODETOMADA: R$ 12,64
+[2022-10-03T12:48:00.177+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:02.599+0000] {tasks.py:383} INFO - Price of 1569037 - QUADRODEDISTRIBUICAODEPVC: R$ 57,50
+[2022-10-03T12:48:02.599+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:05.188+0000] {tasks.py:383} INFO - Price of 1569038 - QUADRODEDISTRIBUICAODEEMBUTIRDEPVC: R$ 60,01
+[2022-10-03T12:48:05.189+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:07.980+0000] {tasks.py:383} INFO - Price of 1569036 - PULSADORCAMPAINHA: R$ 7,61
+[2022-10-03T12:48:07.981+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:10.897+0000] {tasks.py:383} INFO - Price of 1569035 - PROJETORLED: R$ 185,42
+[2022-10-03T12:48:10.898+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:14.590+0000] {tasks.py:383} INFO - Price of 1572036 - CABOFLEXIVEL: R$ 199,00
+[2022-10-03T12:48:14.591+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:17.786+0000] {tasks.py:383} INFO - Price of 1569045 - CONJUNTODETOMADA: R$ 14,35
+[2022-10-03T12:48:17.787+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:20.017+0000] {tasks.py:383} INFO - Price of 1569030 - INTERRUPTORSIMPLES: R$ 9,58
+[2022-10-03T12:48:20.017+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:22.930+0000] {tasks.py:383} INFO - Price of 1569043 - MODULOTOMADA: R$ 7,53
+[2022-10-03T12:48:22.930+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:25.834+0000] {tasks.py:383} INFO - Price of 1572038 - CABOFLEXIVEL: R$ 179
+[2022-10-03T12:48:25.834+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:28.842+0000] {tasks.py:383} INFO - Price of 1569028 - DISJUNTORDECAIXA: R$ 192,50
+[2022-10-03T12:48:28.843+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:31.510+0000] {tasks.py:383} INFO - Price of 1569042 - PLACACEGA: R$ 8,59
+[2022-10-03T12:48:31.511+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:34.205+0000] {tasks.py:383} INFO - Price of 1572040 - CABOFLEXIVEL: R$ 579
+[2022-10-03T12:48:34.206+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:38.583+0000] {tasks.py:383} INFO - Price of 1572041 - CABODECOBREISOLADOFLEXIVELPARACONDUCAOELETRICA: R$ 210
+[2022-10-03T12:48:38.583+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:41.725+0000] {tasks.py:383} INFO - Price of 1572042 - CABODECOBREISOLADOFLEXIVELPARACONDUCAOELETRICA: R$ 210
+[2022-10-03T12:48:41.726+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:43.884+0000] {tasks.py:383} INFO - Price of 1572034 - LUMINARIAQUADRADADICROICA: R$ 19,00
+[2022-10-03T12:48:43.885+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:46.263+0000] {tasks.py:383} INFO - Price of 1572039 - CABOFLEXIVEL: R$ 389
+[2022-10-03T12:48:46.264+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:48.559+0000] {tasks.py:383} INFO - Price of 1572031 - LUMINARIAREDONDADICROICA: R$ 19,00
+[2022-10-03T12:48:48.560+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:51.044+0000] {tasks.py:383} INFO - Price of 1572028 - DISJUNTORTRIPOLARDECAIXAMOLDADA: R$ 214,50
+[2022-10-03T12:48:51.044+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:53.431+0000] {tasks.py:383} INFO - Price of 1572029 - DISJUNTORTRIPOLARDECAIXAMOLDADA: R$ 251,90
+[2022-10-03T12:48:53.432+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:55.595+0000] {tasks.py:383} INFO - Price of 1572032 - LUMINARIAREDONDADICROICA: R$ 19,00
+[2022-10-03T12:48:55.595+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:48:57.834+0000] {tasks.py:383} INFO - Price of 1569031 - INTERRUPTORSIMPLES: R$ 20,40
+[2022-10-03T12:48:57.835+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:49:00.746+0000] {tasks.py:383} INFO - Price of 1572037 - CABOEXTRAFLEXIVEL: R$ 189,00
+[2022-10-03T12:49:00.747+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:49:02.792+0000] {tasks.py:383} INFO - Price of 1569033 - LUMINARIAPLAFONDELED: R$ 36,00
+[2022-10-03T12:49:02.793+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:49:05.445+0000] {tasks.py:383} INFO - Price of 1569027 - DISJUNTORMONOPOLAR: R$ 5,50
+[2022-10-03T12:49:05.446+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:49:07.852+0000] {tasks.py:383} INFO - Price of 1569032 - LUMINARIAPLAFONDELED: R$ 36,00
+[2022-10-03T12:49:07.853+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:49:07.989+0000] {tasks.py:410} INFO - Saved screenshots and prices
+[2022-10-03T12:49:07.990+0000] {tasks.py:241} INFO - Test passed
+[2022-10-03T12:49:07.995+0000] {tasks.py:267} INFO - Requested prices: 34
+[2022-10-03T12:49:07.995+0000] {tasks.py:268} INFO - Scraped prices: 34
+[2022-10-03T12:49:07.996+0000] {tasks.py:269} INFO - Day of the scraping: 03/10/2022
+[2022-10-03T12:49:08.025+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-10-03T12:49:08.047+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=eletro_energia, task_id=colector, execution_date=20220901T000000, start_date=20221003T124715, end_date=20221003T124908
+[2022-10-03T12:49:08.108+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-10-03T12:49:08.154+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

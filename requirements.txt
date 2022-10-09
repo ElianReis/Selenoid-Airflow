@@ -1,0 +1,7 @@
+numpy
+pandas
+selenium
+unidecode
+webdriver-manager
+PyYAML
+xlwt

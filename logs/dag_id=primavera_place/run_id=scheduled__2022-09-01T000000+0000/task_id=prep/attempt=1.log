@@ -1,0 +1,29 @@
+[2022-10-01T21:34:00.678+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: primavera_place.prep scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-01T21:34:00.692+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: primavera_place.prep scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-01T21:34:00.692+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-01T21:34:00.693+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-10-01T21:34:00.693+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-01T21:34:00.711+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): prep> on 2022-09-01 00:00:00+00:00
+[2022-10-01T21:34:00.718+0000] {standard_task_runner.py:54} INFO - Started process 73 to run task
+[2022-10-01T21:34:00.723+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'primavera_place', 'prep', 'scheduled__2022-09-01T00:00:00+00:00', '--job-id', '350', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpvicl2jmu']
+[2022-10-01T21:34:00.724+0000] {standard_task_runner.py:83} INFO - Job 350: Subtask prep
+[2022-10-01T21:34:00.725+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-10-01T21:34:01.447+0000] {task_command.py:384} INFO - Running <TaskInstance: primavera_place.prep scheduled__2022-09-01T00:00:00+00:00 [running]> on host dc20523c063c
+[2022-10-01T21:34:01.530+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=primavera_place
+AIRFLOW_CTX_TASK_ID=prep
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-01T00:00:00+00:00
+[2022-10-01T21:34:01.531+0000] {tasks.py:109} INFO - Reading the last request file for day 01/10/2022
+[2022-10-01T21:34:02.155+0000] {tasks.py:88} INFO - Cleaning the column NM_INSUMO
+[2022-10-01T21:34:02.508+0000] {tasks.py:128} INFO - Filtering for BP ['93052'] and period ['M10']
+[2022-10-01T21:34:02.522+0000] {tasks.py:39} INFO - Defining DEC to export information
+[2022-10-01T21:34:02.557+0000] {tasks.py:136} INFO - Saved prep dataframe in ./data_output/PRIMAVERA_PLACE/coleta_2022/coleta_outubro/coleta_1_dec/saida_2022_10_01
+[2022-10-01T21:34:02.562+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-10-01T21:34:02.577+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=primavera_place, task_id=prep, execution_date=20220901T000000, start_date=20221001T213400, end_date=20221001T213402
+[2022-10-01T21:34:02.621+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-10-01T21:34:02.682+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

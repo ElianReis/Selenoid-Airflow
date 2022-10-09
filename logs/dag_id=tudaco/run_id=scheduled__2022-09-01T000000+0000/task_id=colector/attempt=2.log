@@ -1,0 +1,157 @@
+[2022-10-03T12:51:04.908+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tudaco.colector scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-03T12:51:04.923+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tudaco.colector scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-03T12:51:04.924+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-03T12:51:04.924+0000] {taskinstance.py:1363} INFO - Starting attempt 2 of 2
+[2022-10-03T12:51:04.925+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-03T12:51:04.944+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-09-01 00:00:00+00:00
+[2022-10-03T12:51:04.952+0000] {standard_task_runner.py:54} INFO - Started process 1036 to run task
+[2022-10-03T12:51:04.955+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tudaco', 'colector', 'scheduled__2022-09-01T00:00:00+00:00', '--job-id', '400', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp25p9kpoh']
+[2022-10-03T12:51:04.956+0000] {standard_task_runner.py:83} INFO - Job 400: Subtask colector
+[2022-10-03T12:51:04.958+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-10-03T12:51:05.816+0000] {task_command.py:384} INFO - Running <TaskInstance: tudaco.colector scheduled__2022-09-01T00:00:00+00:00 [running]> on host 9a36b0424536
+[2022-10-03T12:51:05.992+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tudaco
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-01T00:00:00+00:00
+[2022-10-03T12:51:05.993+0000] {tasks.py:39} INFO - Defining DEC to export information
+[2022-10-03T12:51:06.003+0000] {tasks.py:353} INFO - Reading prep dataframe
+[2022-10-03T12:51:06.024+0000] {tasks.py:146} INFO - Instantiating the Browser with the requested settings
+[2022-10-03T12:51:10.736+0000] {tasks.py:160} INFO - Browser configured
+[2022-10-03T12:51:10.737+0000] {tasks.py:283} INFO - Removing nan URL values
+[2022-10-03T12:51:10.738+0000] {tasks.py:284} INFO - Requested prices before: 46
+[2022-10-03T12:51:10.741+0000] {tasks.py:289} INFO - Requested prices after: 46
+[2022-10-03T12:51:17.024+0000] {tasks.py:383} INFO - Price of 1569684 - JOELHODEPVC: 3,10
+[2022-10-03T12:51:17.025+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:51:20.454+0000] {tasks.py:383} INFO - Price of 1569696 - TUBODEPVCSOLDAVELPARAAGUA: 74,90
+[2022-10-03T12:51:20.455+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:51:26.414+0000] {tasks.py:383} INFO - Price of 1557772 - VERGALHAOEMACO: 17,86
+[2022-10-03T12:51:26.415+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:51:30.659+0000] {tasks.py:383} INFO - Price of 1569693 - CONEXAOJOELHO90DEPVCSOLDAVEL: 3,80
+[2022-10-03T12:51:30.660+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:51:33.534+0000] {tasks.py:383} INFO - Price of 1568730 - TUBODEPVCPARAESGOTO: 74,90
+[2022-10-03T12:51:33.535+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:51:37.990+0000] {tasks.py:383} INFO - Price of 1569691 - CONEXAOJOELHO90: 1,05
+[2022-10-03T12:51:37.991+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:51:41.032+0000] {tasks.py:383} INFO - Price of 1569685 - JOELHODEPVC: 6,00
+[2022-10-03T12:51:41.034+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:51:45.668+0000] {tasks.py:383} INFO - Price of 1557767 - VERGALHAOEMACO: 214,79
+[2022-10-03T12:51:45.671+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:51:49.385+0000] {tasks.py:383} INFO - Price of 1557774 - TE90: 9,00
+[2022-10-03T12:51:49.386+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:51:53.853+0000] {tasks.py:383} INFO - Price of 1557770 - VERGALHAOEMACO: 53,61
+[2022-10-03T12:51:53.854+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:51:56.732+0000] {tasks.py:383} INFO - Price of 1569689 - CONEXAOTEDEPVCPARAAGUASOLDAVEL90GRAUS: 3,80
+[2022-10-03T12:51:56.734+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:51:59.872+0000] {tasks.py:383} INFO - Price of 1557777 - TUBODEPVCPARAAGUAFRIASOLDAVEL: 74,90
+[2022-10-03T12:51:59.872+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:02.236+0000] {tasks.py:383} INFO - Price of 1558904 - CABOISOLADO: 5,35
+[2022-10-03T12:52:02.237+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:05.248+0000] {tasks.py:386} INFO - Skipping element errors to: https://www.lojastudaco.com.br/hidraulica/conexoes-agua-fria/te-soldavel-25mm
+[2022-10-03T12:52:05.264+0000] {tasks.py:387} INFO - Error: Message: Unable to locate element: #variacaoPreco
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:404:5
+element.find/</<@chrome://remote/content/marionette/element.js:291:16
+
+[2022-10-03T12:52:05.278+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:08.256+0000] {tasks.py:383} INFO - Price of 1567432 - CABODECOBREISOLADOFLEXIVELPARACONDUCAOELETRICA: 5,35
+[2022-10-03T12:52:08.257+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:10.467+0000] {tasks.py:383} INFO - Price of 1569676 - CAIXADAGUA: 379,90
+[2022-10-03T12:52:10.468+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:13.188+0000] {tasks.py:383} INFO - Price of 1569690 - CONEXAOTEDEPVCSOLDAVELPARAAGUA: 10,00
+[2022-10-03T12:52:13.188+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:17.197+0000] {tasks.py:383} INFO - Price of 1569680 - JOELHODEPVC: 1,60
+[2022-10-03T12:52:17.198+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:20.145+0000] {tasks.py:383} INFO - Price of 1569687 - TUBOLEVEDEPVCRIGIDO: 195,90
+[2022-10-03T12:52:20.146+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:24.571+0000] {tasks.py:383} INFO - Price of 1569682 - JOELHODEPVC: 7,50
+[2022-10-03T12:52:24.572+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:26.800+0000] {tasks.py:383} INFO - Price of 1569677 - CAIXADAGUA: 234,90
+[2022-10-03T12:52:26.801+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:30.227+0000] {tasks.py:383} INFO - Price of 1557775 - ELETRODUTODEPVCFLEXIVEL: 1,90
+[2022-10-03T12:52:30.228+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:32.202+0000] {tasks.py:383} INFO - Price of 1568729 - TUBODEPVCPARAESGOTO: 29,90
+[2022-10-03T12:52:32.203+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:36.356+0000] {tasks.py:386} INFO - Skipping element errors to: https://www.lojastudaco.com.br/hidraulica/conexoes-esgoto/joelho-90-esgoto-primario-100mm
+[2022-10-03T12:52:36.357+0000] {tasks.py:387} INFO - Error: Message: Unable to locate element: #variacaoPreco
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:404:5
+element.find/</<@chrome://remote/content/marionette/element.js:291:16
+
+[2022-10-03T12:52:36.357+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:39.873+0000] {tasks.py:383} INFO - Price of 1557773 - JOELHO90: 6,50
+[2022-10-03T12:52:39.874+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:43.742+0000] {tasks.py:383} INFO - Price of 1557769 - VERGALHAOEMACO: 34,42
+[2022-10-03T12:52:43.742+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:48.790+0000] {tasks.py:386} INFO - Skipping element errors to: https://www.lojastudaco.com.br/hidraulica/conexoes-esgoto/reducao-excentrica-esgoto-primario-100mmx50mm
+[2022-10-03T12:52:48.791+0000] {tasks.py:387} INFO - Error: Message: Unable to locate element: #variacaoPreco
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:404:5
+element.find/</<@chrome://remote/content/marionette/element.js:291:16
+
+[2022-10-03T12:52:48.791+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:51.936+0000] {tasks.py:383} INFO - Price of 1569683 - JOELHODEPVC: 2,10
+[2022-10-03T12:52:51.937+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:52:54.928+0000] {tasks.py:383} INFO - Price of 1568726 - ELETRODUTODEPVCFLEXIVELCORRUGADO: 1,90
+[2022-10-03T12:52:54.929+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:03.752+0000] {tasks.py:383} INFO - Price of 1557768 - VERGALHAOEMACO: 336,28
+[2022-10-03T12:53:03.753+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:10.922+0000] {tasks.py:383} INFO - Price of 1567429 - CABODECOBREISOLADOFLEXIVELPARACONDUCAOELETRICA: 2,35
+[2022-10-03T12:53:10.923+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:14.153+0000] {tasks.py:383} INFO - Price of 1558905 - CABODECOBREFLEXIVEL: 2,35
+[2022-10-03T12:53:14.154+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:17.449+0000] {tasks.py:383} INFO - Price of 1569681 - JOELHODEPVC: 2,70
+[2022-10-03T12:53:17.450+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:20.880+0000] {tasks.py:383} INFO - Price of 1569686 - CAIXASIFONADADEPVC: 28,00
+[2022-10-03T12:53:20.891+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:22.999+0000] {tasks.py:383} INFO - Price of 1567428 - CABODECOBREISOLADOFLEXIVELPARACONDUCAOELETRICA: 2,35
+[2022-10-03T12:53:23.000+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:26.484+0000] {tasks.py:383} INFO - Price of 1557766 - BARRACHATADEFERRO: 29,93
+[2022-10-03T12:53:26.485+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:31.078+0000] {tasks.py:386} INFO - Skipping element errors to: https://www.lojastudaco.com.br/hidraulica/caixas-e-ralos/caixa-sifonada-quadrada-branca-100mm-x-100-mm-x-50mm
+[2022-10-03T12:53:31.079+0000] {tasks.py:387} INFO - Error: Message: Unable to locate element: #variacaoPreco
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:404:5
+element.find/</<@chrome://remote/content/marionette/element.js:291:16
+
+[2022-10-03T12:53:31.080+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:35.580+0000] {tasks.py:383} INFO - Price of 1557776 - PREGODEFERROCOMCABECA: 24,73
+[2022-10-03T12:53:35.581+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:38.378+0000] {tasks.py:383} INFO - Price of 1567431 - CABODECOBREISOLADOFLEXIVELPARACONDUCAOELETRICA: 5,35
+[2022-10-03T12:53:38.379+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:41.531+0000] {tasks.py:383} INFO - Price of 1557771 - VERGALHAOEMACO: 127,98
+[2022-10-03T12:53:41.533+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:44.404+0000] {tasks.py:383} INFO - Price of 1569695 - TUBODEPVCSOLDAVELPARAAGUA: 51,90
+[2022-10-03T12:53:44.405+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:47.754+0000] {tasks.py:383} INFO - Price of 1567430 - ARAMERECOZIDO: 24,73
+[2022-10-03T12:53:47.755+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:49.882+0000] {tasks.py:383} INFO - Price of 1569692 - CONEXAOJOELHO90DEPVC: 2,50
+[2022-10-03T12:53:49.883+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:52.189+0000] {tasks.py:383} INFO - Price of 1568727 - ARAMERECOZIDO: 24,73
+[2022-10-03T12:53:52.189+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:54.244+0000] {tasks.py:383} INFO - Price of 1568731 - PREGOCOMCABECA: 24,73
+[2022-10-03T12:53:54.246+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:58.643+0000] {tasks.py:383} INFO - Price of 1569694 - TUBODEPVCSOLDAVELPARAAGUA: 21,00
+[2022-10-03T12:53:58.644+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:53:58.852+0000] {tasks.py:410} INFO - Saved screenshots and prices
+[2022-10-03T12:53:58.853+0000] {tasks.py:244} INFO - Test not passed
+[2022-10-03T12:53:58.854+0000] {tasks.py:246} INFO - Difference of 4 prices
+[2022-10-03T12:53:58.863+0000] {tasks.py:267} INFO - Requested prices: 46
+[2022-10-03T12:53:58.865+0000] {tasks.py:268} INFO - Scraped prices: 42
+[2022-10-03T12:53:58.866+0000] {tasks.py:269} INFO - Day of the scraping: 03/10/2022
+[2022-10-03T12:54:00.879+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-10-03T12:54:00.940+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=tudaco, task_id=colector, execution_date=20220901T000000, start_date=20221003T125104, end_date=20221003T125400
+[2022-10-03T12:54:01.047+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-10-03T12:54:01.089+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

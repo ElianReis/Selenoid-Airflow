@@ -1,0 +1,54 @@
+[2022-09-26T00:10:59.979+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: encasa.prep scheduled__2022-09-25T00:00:00+00:00 [queued]>
+[2022-09-26T00:10:59.988+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: encasa.prep scheduled__2022-09-25T00:00:00+00:00 [queued]>
+[2022-09-26T00:10:59.988+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T00:10:59.988+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-09-26T00:10:59.989+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T00:11:00.000+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): prep> on 2022-09-25 00:00:00+00:00
+[2022-09-26T00:11:00.005+0000] {standard_task_runner.py:54} INFO - Started process 60 to run task
+[2022-09-26T00:11:00.008+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'encasa', 'prep', 'scheduled__2022-09-25T00:00:00+00:00', '--job-id', '82', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpbldgn3ve']
+[2022-09-26T00:11:00.009+0000] {standard_task_runner.py:83} INFO - Job 82: Subtask prep
+[2022-09-26T00:11:00.009+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-09-26T00:11:00.479+0000] {task_command.py:384} INFO - Running <TaskInstance: encasa.prep scheduled__2022-09-25T00:00:00+00:00 [running]> on host 4f5142878d09
+[2022-09-26T00:11:00.612+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=encasa
+AIRFLOW_CTX_TASK_ID=prep
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-25T00:00:00+00:00
+[2022-09-26T00:11:00.614+0000] {tasks.py:112} INFO - Reading the last request file for day 26/09/2022
+[2022-09-26T00:11:01.078+0000] {tasks.py:92} INFO - Cleaning the column NM_INSUMO
+[2022-09-26T00:11:01.429+0000] {tasks.py:129} INFO - Filtering for BP 93148 and period ['M20']
+[2022-09-26T00:11:01.450+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-09-26T00:11:01.466+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=encasa, task_id=prep, execution_date=20220925T000000, start_date=20220926T001059, end_date=20220926T001101
+[2022-09-26T00:11:01.504+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-09-26T00:11:01.542+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-09-26T00:14:04.170+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: encasa.prep scheduled__2022-09-25T00:00:00+00:00 [queued]>
+[2022-09-26T00:14:04.178+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: encasa.prep scheduled__2022-09-25T00:00:00+00:00 [queued]>
+[2022-09-26T00:14:04.178+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T00:14:04.179+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-09-26T00:14:04.179+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T00:14:04.190+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): prep> on 2022-09-25 00:00:00+00:00
+[2022-09-26T00:14:04.194+0000] {standard_task_runner.py:54} INFO - Started process 96 to run task
+[2022-09-26T00:14:04.195+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'encasa', 'prep', 'scheduled__2022-09-25T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpsn05dvor']
+[2022-09-26T00:14:04.196+0000] {standard_task_runner.py:83} INFO - Job 3: Subtask prep
+[2022-09-26T00:14:04.197+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-09-26T00:14:05.181+0000] {task_command.py:384} INFO - Running <TaskInstance: encasa.prep scheduled__2022-09-25T00:00:00+00:00 [running]> on host c726b2151513
+[2022-09-26T00:14:05.269+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=encasa
+AIRFLOW_CTX_TASK_ID=prep
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-25T00:00:00+00:00
+[2022-09-26T00:14:05.271+0000] {tasks.py:112} INFO - Reading the last request file for day 26/09/2022
+[2022-09-26T00:14:05.715+0000] {tasks.py:92} INFO - Cleaning the column NM_INSUMO
+[2022-09-26T00:14:05.958+0000] {tasks.py:129} INFO - Filtering for BP 93148 and period ['M20']
+[2022-09-26T00:14:05.977+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-09-26T00:14:05.987+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=encasa, task_id=prep, execution_date=20220925T000000, start_date=20220926T001404, end_date=20220926T001405
+[2022-09-26T00:14:06.013+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-09-26T00:14:06.039+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

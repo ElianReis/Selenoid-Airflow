@@ -1,0 +1,36 @@
+[2022-09-26T00:17:54.483+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: encasa.carga_creation scheduled__2022-09-25T00:00:00+00:00 [queued]>
+[2022-09-26T00:17:54.492+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: encasa.carga_creation scheduled__2022-09-25T00:00:00+00:00 [queued]>
+[2022-09-26T00:17:54.493+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T00:17:54.493+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-09-26T00:17:54.493+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T00:17:54.506+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): carga_creation> on 2022-09-25 00:00:00+00:00
+[2022-09-26T00:17:54.512+0000] {standard_task_runner.py:54} INFO - Started process 601 to run task
+[2022-09-26T00:17:54.515+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'encasa', 'carga_creation', 'scheduled__2022-09-25T00:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpcc5_j17y']
+[2022-09-26T00:17:54.515+0000] {standard_task_runner.py:83} INFO - Job 6: Subtask carga_creation
+[2022-09-26T00:17:54.516+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-09-26T00:17:54.962+0000] {task_command.py:384} INFO - Running <TaskInstance: encasa.carga_creation scheduled__2022-09-25T00:00:00+00:00 [running]> on host c726b2151513
+[2022-09-26T00:17:55.022+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=encasa
+AIRFLOW_CTX_TASK_ID=carga_creation
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-25T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-25T00:00:00+00:00
+[2022-09-26T00:17:55.023+0000] {tasks.py:522} INFO - Reading results from collect dataframe
+[2022-09-26T00:17:55.023+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/tasks.py", line 523, in carga_creation
+    dataframe = pd.read_csv("colector.csv", index=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+TypeError: read_csv() got an unexpected keyword argument 'index'
+[2022-09-26T00:17:55.033+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=encasa, task_id=carga_creation, execution_date=20220925T000000, start_date=20220926T001754, end_date=20220926T001755
+[2022-09-26T00:17:55.042+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 6 for task carga_creation (read_csv() got an unexpected keyword argument 'index'; 601)
+[2022-09-26T00:17:55.089+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-09-26T00:17:55.105+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

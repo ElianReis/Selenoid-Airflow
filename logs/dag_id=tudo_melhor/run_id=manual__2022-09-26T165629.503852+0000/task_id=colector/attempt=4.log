@@ -1,0 +1,48 @@
+[2022-09-26T17:57:56.719+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tudo_melhor.colector manual__2022-09-26T16:56:29.503852+00:00 [queued]>
+[2022-09-26T17:57:56.727+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tudo_melhor.colector manual__2022-09-26T16:56:29.503852+00:00 [queued]>
+[2022-09-26T17:57:56.727+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T17:57:56.727+0000] {taskinstance.py:1363} INFO - Starting attempt 4 of 4
+[2022-09-26T17:57:56.728+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T17:57:56.739+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-09-26 16:56:29.503852+00:00
+[2022-09-26T17:57:56.743+0000] {standard_task_runner.py:54} INFO - Started process 1037 to run task
+[2022-09-26T17:57:56.745+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tudo_melhor', 'colector', 'manual__2022-09-26T16:56:29.503852+00:00', '--job-id', '260', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpmtfd29y3']
+[2022-09-26T17:57:56.745+0000] {standard_task_runner.py:83} INFO - Job 260: Subtask colector
+[2022-09-26T17:57:56.746+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-09-26T17:57:57.128+0000] {task_command.py:384} INFO - Running <TaskInstance: tudo_melhor.colector manual__2022-09-26T16:56:29.503852+00:00 [running]> on host 230d0404a0b6
+[2022-09-26T17:57:57.185+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tudo_melhor
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-26T16:56:29.503852+00:00
+AIRFLOW_CTX_TRY_NUMBER=4
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-26T16:56:29.503852+00:00
+[2022-09-26T17:57:57.186+0000] {tasks.py:42} INFO - Defining DEC to export information
+[2022-09-26T17:57:57.191+0000] {tasks.py:358} INFO - Reading prep dataframe
+[2022-09-26T17:57:57.205+0000] {tasks.py:150} INFO - Instantiating the Browser with the requested settings
+[2022-09-26T17:57:57.223+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/tasks.py", line 360, in colector
+    browser = config_browser(config)
+  File "/opt/airflow/dags/tasks.py", line 164, in config_browser
+    desired_capabilities=capabilities)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 270, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 363, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: create container: Error response from daemon: No such image: selenoid/firefox:72.0
+
+[2022-09-26T17:57:57.233+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=tudo_melhor, task_id=colector, execution_date=20220926T165629, start_date=20220926T175756, end_date=20220926T175757
+[2022-09-26T17:57:57.242+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 260 for task colector (Message: create container: Error response from daemon: No such image: selenoid/firefox:72.0
+; 1037)
+[2022-09-26T17:57:57.278+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-09-26T17:57:57.301+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

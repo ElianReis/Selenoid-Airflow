@@ -1,0 +1,40 @@
+[2022-10-07T16:05:20.079+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: brasil_nativas.colector scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-07T16:05:20.104+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: brasil_nativas.colector scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-07T16:05:20.105+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-07T16:05:20.107+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-10-07T16:05:20.108+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-07T16:05:20.141+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-09-01 00:00:00+00:00
+[2022-10-07T16:05:20.154+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'brasil_nativas', 'colector', 'scheduled__2022-09-01T00:00:00+00:00', '--job-id', '424', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpnx8so9ja']
+[2022-10-07T16:05:20.153+0000] {standard_task_runner.py:54} INFO - Started process 1849 to run task
+[2022-10-07T16:05:20.155+0000] {standard_task_runner.py:83} INFO - Job 424: Subtask colector
+[2022-10-07T16:05:20.157+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-10-07T16:05:20.837+0000] {task_command.py:384} INFO - Running <TaskInstance: brasil_nativas.colector scheduled__2022-09-01T00:00:00+00:00 [running]> on host 9a36b0424536
+[2022-10-07T16:05:20.908+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=brasil_nativas
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-01T00:00:00+00:00
+[2022-10-07T16:05:20.909+0000] {tasks.py:39} INFO - Defining DEC to export information
+[2022-10-07T16:05:20.916+0000] {tasks.py:353} INFO - Reading prep dataframe
+[2022-10-07T16:05:20.925+0000] {tasks.py:146} INFO - Instantiating the Browser with the requested settings
+[2022-10-07T16:05:25.765+0000] {tasks.py:160} INFO - Browser configured
+[2022-10-07T16:05:25.766+0000] {tasks.py:283} INFO - Removing nan URL values
+[2022-10-07T16:05:25.767+0000] {tasks.py:284} INFO - Requested prices before: 2
+[2022-10-07T16:05:25.775+0000] {tasks.py:289} INFO - Requested prices after: 2
+[2022-10-07T16:05:31.056+0000] {tasks.py:383} INFO - Price of 1575658 - TERRAVEGETAL: R$22,90
+[2022-10-07T16:05:31.057+0000] {tasks.py:322} INFO - Printing information
+[2022-10-07T16:05:35.377+0000] {tasks.py:383} INFO - Price of 1575655 - MUDADEIPEAMARELO: R$77,76
+[2022-10-07T16:05:35.377+0000] {tasks.py:322} INFO - Printing information
+[2022-10-07T16:05:35.431+0000] {tasks.py:410} INFO - Saved screenshots and prices
+[2022-10-07T16:05:35.431+0000] {tasks.py:241} INFO - Test passed
+[2022-10-07T16:05:35.433+0000] {tasks.py:267} INFO - Requested prices: 2
+[2022-10-07T16:05:35.433+0000] {tasks.py:268} INFO - Scraped prices: 2
+[2022-10-07T16:05:35.433+0000] {tasks.py:269} INFO - Day of the scraping: 07/10/2022
+[2022-10-07T16:05:35.446+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-10-07T16:05:35.456+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=brasil_nativas, task_id=colector, execution_date=20220901T000000, start_date=20221007T160520, end_date=20221007T160535
+[2022-10-07T16:05:35.478+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-10-07T16:05:35.498+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

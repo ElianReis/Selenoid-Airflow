@@ -1,0 +1,19 @@
+robots:
+    cemaco:
+        code: '91792'
+        element: .price.margint10
+        type_element: By.CSS_SELECTOR
+        schedule: 0 0 11 * *
+        day_diff: 0
+        delay: 1.5
+        scroll:
+            value: 1
+            type: By.CSS_SELECTOR
+    ferragista:
+        code: '92184'
+        element: p .woocommerce-Price-amount.amount > bdi
+        type_element: By.CSS_SELECTOR
+        schedule: 0 0 21 * *
+        day_diff: 0
+        delay: 1.5
+        popup: .sgpb-popup-close-button-3

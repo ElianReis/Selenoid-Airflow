@@ -1,0 +1,455 @@
+[2022-09-26T19:20:08.932+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tudo_melhor.colector manual__2022-09-26T16:56:29.503852+00:00 [queued]>
+[2022-09-26T19:20:08.942+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tudo_melhor.colector manual__2022-09-26T16:56:29.503852+00:00 [queued]>
+[2022-09-26T19:20:08.942+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T19:20:08.942+0000] {taskinstance.py:1363} INFO - Starting attempt 7 of 7
+[2022-09-26T19:20:08.943+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T19:20:08.956+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-09-26 16:56:29.503852+00:00
+[2022-09-26T19:20:08.960+0000] {standard_task_runner.py:54} INFO - Started process 214 to run task
+[2022-09-26T19:20:08.962+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tudo_melhor', 'colector', 'manual__2022-09-26T16:56:29.503852+00:00', '--job-id', '270', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpgxvwt3xi']
+[2022-09-26T19:20:08.963+0000] {standard_task_runner.py:83} INFO - Job 270: Subtask colector
+[2022-09-26T19:20:08.964+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-09-26T19:20:09.390+0000] {task_command.py:384} INFO - Running <TaskInstance: tudo_melhor.colector manual__2022-09-26T16:56:29.503852+00:00 [running]> on host 230d0404a0b6
+[2022-09-26T19:20:09.457+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tudo_melhor
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-26T16:56:29.503852+00:00
+AIRFLOW_CTX_TRY_NUMBER=7
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-26T16:56:29.503852+00:00
+[2022-09-26T19:20:09.458+0000] {tasks.py:42} INFO - Defining DEC to export information
+[2022-09-26T19:20:09.465+0000] {tasks.py:358} INFO - Reading prep dataframe
+[2022-09-26T19:20:09.532+0000] {tasks.py:150} INFO - Instantiating the Browser with the requested settings
+[2022-09-26T19:20:12.281+0000] {tasks.py:165} INFO - Browser configured
+[2022-09-26T19:20:12.281+0000] {tasks.py:288} INFO - Removing nan URL values
+[2022-09-26T19:20:12.282+0000] {tasks.py:289} INFO - Requested prices before: 181
+[2022-09-26T19:20:12.285+0000] {tasks.py:294} INFO - Requested prices after: 176
+[2022-09-26T19:20:18.454+0000] {tasks.py:388} INFO - Price of 1567793 - DISJUNTORMONOPOLAR: R$ 14,22
+[2022-09-26T19:20:18.455+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:20:22.671+0000] {tasks.py:388} INFO - Price of 1569051 - TORNEIRAPARAJARDIM: R$ 89,95
+[2022-09-26T19:20:22.671+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:20:26.677+0000] {tasks.py:388} INFO - Price of 1567776 - JOELHO90DEPVCPARAESGOTO: R$ 9,14
+[2022-09-26T19:20:26.678+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:20:30.451+0000] {tasks.py:388} INFO - Price of 1567797 - BUCHADEREDUCAOSOLDAVELEMPVC: R$ 19,88
+[2022-09-26T19:20:30.451+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:20:34.214+0000] {tasks.py:388} INFO - Price of 1567781 - CONEXAOJUNCAODEPVCPARAESGOTOPREDIALSIMPLES: R$ 31,56
+[2022-09-26T19:20:34.215+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:20:38.138+0000] {tasks.py:388} INFO - Price of 1567746 - CAIXADAGUADEPOLIETILENO: R$ 271,43
+[2022-09-26T19:20:38.139+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:20:41.738+0000] {tasks.py:388} INFO - Price of 1567815 - JUNCAOSIMPLESDEPVCRIGIDO45: R$ 17,63
+[2022-09-26T19:20:41.738+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:20:45.681+0000] {tasks.py:388} INFO - Price of 1559693 - PORTADEMADEIRALISA: R$ 239,76
+[2022-09-26T19:20:45.681+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:20:49.081+0000] {tasks.py:388} INFO - Price of 1554293 - TANQUEMARMOREGRANITOSINTETICO: R$ 265,82
+[2022-09-26T19:20:49.081+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:20:52.802+0000] {tasks.py:388} INFO - Price of 1567813 - JUNCAOSIMPLESDEPVCRIGIDO45: R$ 23,43
+[2022-09-26T19:20:52.803+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:20:56.404+0000] {tasks.py:388} INFO - Price of 1569074 - PLACACEGA: R$ 3,82
+[2022-09-26T19:20:56.404+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:00.130+0000] {tasks.py:391} INFO - Skipping element errors to: https://tudodemelhorparavoce.com.br/produto/1092-joelho-90%c2%ba-50mm-tigre
+[2022-09-26T19:21:00.130+0000] {tasks.py:392} INFO - Error: Message: Unable to locate element: .col-sm-12.col-md-7.col-xs-7 > h3
+Stacktrace:
+WebDriverError@chrome://marionette/content/error.js:175:5
+NoSuchElementError@chrome://marionette/content/error.js:387:5
+element.find/</<@chrome://marionette/content/element.js:331:16
+
+[2022-09-26T19:21:00.130+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:03.638+0000] {tasks.py:388} INFO - Price of 1569065 - PLUGEMPVC: R$ 1,51
+[2022-09-26T19:21:03.638+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:07.729+0000] {tasks.py:388} INFO - Price of 1554291 - CIMENTOBRANCO: R$ 3,35
+[2022-09-26T19:21:07.729+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:11.332+0000] {tasks.py:388} INFO - Price of 1569104 - TINTAACRILICASEMIBRILHO: R$ 329,27
+[2022-09-26T19:21:11.333+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:17.288+0000] {tasks.py:388} INFO - Price of 1567755 - INTERRUPTORDEEMBUTIR: R$ 16,37
+[2022-09-26T19:21:17.288+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:21.909+0000] {tasks.py:388} INFO - Price of 1567777 - CURVAEMPVCRIGIDO90PARAESGOTO: R$ 31,56
+[2022-09-26T19:21:21.954+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:27.215+0000] {tasks.py:388} INFO - Price of 1567782 - LUVADEREDUCAOEMPVCSOLDAVEL: R$ 27,31
+[2022-09-26T19:21:27.216+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:31.107+0000] {tasks.py:388} INFO - Price of 1567757 - BUCHADEREDUCAOEMPVCSOLDAVEL: R$ 1,55
+[2022-09-26T19:21:31.113+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:34.459+0000] {tasks.py:388} INFO - Price of 1567826 - INTERRUPTORDEEMBUTIR: R$ 6,80
+[2022-09-26T19:21:34.459+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:38.338+0000] {tasks.py:388} INFO - Price of 1567799 - BUCHADEREDUCAOSOLDAVELEMPVC: R$ 6,67
+[2022-09-26T19:21:38.339+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:41.736+0000] {tasks.py:391} INFO - Skipping element errors to: https://tudodemelhorparavoce.com.br/produto/1602-vaso-sanitario-acesso-convencional-branco-incepa
+[2022-09-26T19:21:41.736+0000] {tasks.py:392} INFO - Error: Message: Unable to locate element: .col-sm-12.col-md-7.col-xs-7 > h3
+Stacktrace:
+WebDriverError@chrome://marionette/content/error.js:175:5
+NoSuchElementError@chrome://marionette/content/error.js:387:5
+element.find/</<@chrome://marionette/content/element.js:331:16
+
+[2022-09-26T19:21:41.736+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:45.481+0000] {tasks.py:388} INFO - Price of 1567820 - CURVAEMPVCRIGIDO90: R$ 4,67
+[2022-09-26T19:21:45.481+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:48.827+0000] {tasks.py:388} INFO - Price of 1569049 - REGISTRODEGAVETABRUTO: R$ 40,65
+[2022-09-26T19:21:48.828+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:52.572+0000] {tasks.py:388} INFO - Price of 1569084 - COLABRANCA: R$ 32,25
+[2022-09-26T19:21:52.573+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:55.863+0000] {tasks.py:388} INFO - Price of 1554286 - CONJUNTODEFIXACAOPARAVASOSANITARIO: R$ 48,15
+[2022-09-26T19:21:55.864+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:21:59.634+0000] {tasks.py:388} INFO - Price of 1567803 - CURVA90CURTAESG: R$ 15,18
+[2022-09-26T19:21:59.635+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:03.138+0000] {tasks.py:388} INFO - Price of 1569106 - TINTAACRILICASEMIBRILHO: R$ 240,88
+[2022-09-26T19:22:03.138+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:06.882+0000] {tasks.py:388} INFO - Price of 1569095 - TELHA: R$ 21,64
+[2022-09-26T19:22:06.883+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:10.295+0000] {tasks.py:388} INFO - Price of 1567770 - ELETRODUTODEPVCCORRUGADO: R$ 98,83
+[2022-09-26T19:22:10.296+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:13.925+0000] {tasks.py:388} INFO - Price of 1567784 - CURVA45DEPVCPARAESGOTO: R$ 54,03
+[2022-09-26T19:22:13.926+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:17.683+0000] {tasks.py:388} INFO - Price of 1569062 - JOELHO90DEPVC: R$ 7,47
+[2022-09-26T19:22:17.684+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:21.137+0000] {tasks.py:388} INFO - Price of 1567823 - JOELHO90SOLDAVEL: R$ 3,46
+[2022-09-26T19:22:21.138+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:24.647+0000] {tasks.py:388} INFO - Price of 1554247 - CUBAEMINOX: R$ 304,76
+[2022-09-26T19:22:24.647+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:28.469+0000] {tasks.py:388} INFO - Price of 1567804 - CUBADELOUCA: R$ 91,94
+[2022-09-26T19:22:28.470+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:32.029+0000] {tasks.py:388} INFO - Price of 1567761 - BUCHADEREDUCAO: R$ 5,76
+[2022-09-26T19:22:32.029+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:35.761+0000] {tasks.py:388} INFO - Price of 1569091 - CUBAEMACOINOX304: R$ 263,66
+[2022-09-26T19:22:35.761+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:39.461+0000] {tasks.py:388} INFO - Price of 1569100 - TINTAESMALTESINTETICO: R$ 84,74
+[2022-09-26T19:22:39.461+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:44.002+0000] {tasks.py:388} INFO - Price of 1554279 - TORNEIRADEMESAPARAPNE: R$ 152,57
+[2022-09-26T19:22:44.003+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:48.004+0000] {tasks.py:388} INFO - Price of 1567822 - JOELHO90SOLDAVEL: R$ 10,64
+[2022-09-26T19:22:48.005+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:51.845+0000] {tasks.py:388} INFO - Price of 1569108 - TEXTURAPARASUPERFICIEINTERNAEEXTERNA: R$ 110,77
+[2022-09-26T19:22:51.846+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:55.460+0000] {tasks.py:388} INFO - Price of 1569056 - TORNEIRAPARALAVATORIO: R$ 52,20
+[2022-09-26T19:22:55.460+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:22:59.298+0000] {tasks.py:388} INFO - Price of 1569075 - PLACACEGA: R$ 2,02
+[2022-09-26T19:22:59.299+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:02.806+0000] {tasks.py:388} INFO - Price of 1569097 - TINTAESMALTESINTETICO: R$ 84,74
+[2022-09-26T19:23:02.806+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:06.646+0000] {tasks.py:391} INFO - Skipping element errors to: https://tudodemelhorparavoce.com.br/produto/1176-adesivo-850-gramas
+[2022-09-26T19:23:06.647+0000] {tasks.py:392} INFO - Error: Message: Unable to locate element: .col-sm-12.col-md-7.col-xs-7 > h3
+Stacktrace:
+WebDriverError@chrome://marionette/content/error.js:175:5
+NoSuchElementError@chrome://marionette/content/error.js:387:5
+element.find/</<@chrome://marionette/content/element.js:331:16
+
+[2022-09-26T19:23:06.647+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:09.941+0000] {tasks.py:388} INFO - Price of 1567824 - CONJUNTODETOMADAPARATELEFONE: R$ 24,50
+[2022-09-26T19:23:09.941+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:13.720+0000] {tasks.py:388} INFO - Price of 1569047 - TEDEPVCSOLDAVEL: R$ 14,38
+[2022-09-26T19:23:13.720+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:17.640+0000] {tasks.py:388} INFO - Price of 1557778 - CAIXADAGUADEPOLIETILENOREDONDA: R$ 463,17
+[2022-09-26T19:23:17.640+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:20.981+0000] {tasks.py:388} INFO - Price of 1554259 - CHUVEIROMETALICO: R$ 175,94
+[2022-09-26T19:23:20.982+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:24.781+0000] {tasks.py:388} INFO - Price of 1569089 - VASOSANITARIODELOUCA: R$ 193,73
+[2022-09-26T19:23:24.781+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:30.387+0000] {tasks.py:388} INFO - Price of 1569080 - TUBODEPVCPARAESGOTO: R$ 261,65
+[2022-09-26T19:23:30.387+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:34.169+0000] {tasks.py:388} INFO - Price of 1567780 - CURVAEMPVCRIGIDO90PARAESGOTO: R$ 9,77
+[2022-09-26T19:23:34.170+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:37.546+0000] {tasks.py:388} INFO - Price of 1567747 - LUVASIMPLES: R$ 8,83
+[2022-09-26T19:23:37.547+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:41.322+0000] {tasks.py:388} INFO - Price of 1569078 - CONJUNTODETOMADA: R$ 7,17
+[2022-09-26T19:23:41.323+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:44.806+0000] {tasks.py:388} INFO - Price of 1554271 - TORNEIRADEBOIA: R$ 14,92
+[2022-09-26T19:23:44.807+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:48.664+0000] {tasks.py:388} INFO - Price of 1569076 - CONJUNTODETOMADA: R$ 24,02
+[2022-09-26T19:23:48.664+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:52.221+0000] {tasks.py:388} INFO - Price of 1567811 - ESMERILHADEIRAANGULAR: R$ 1.092,53
+[2022-09-26T19:23:52.222+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:56.044+0000] {tasks.py:388} INFO - Price of 1567819 - CURVAEMPVCRIGIDO90: R$ 53,58
+[2022-09-26T19:23:56.045+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:23:59.639+0000] {tasks.py:388} INFO - Price of 1567794 - AGUARRAZ: R$ 104,21
+[2022-09-26T19:23:59.640+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:03.448+0000] {tasks.py:388} INFO - Price of 1567758 - BUCHADEREDUCAO: R$ 10,68
+[2022-09-26T19:24:03.449+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:06.818+0000] {tasks.py:388} INFO - Price of 1569068 - CONJUNTODEINTERRUPTORPARALELO: R$ 18,21
+[2022-09-26T19:24:06.818+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:10.531+0000] {tasks.py:388} INFO - Price of 1567779 - CURVAEMPVCRIGIDO90PARAESGOTO: R$ 76,73
+[2022-09-26T19:24:10.531+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:13.861+0000] {tasks.py:388} INFO - Price of 1569061 - CAPROSCAVEL: R$ 3,10
+[2022-09-26T19:24:13.862+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:17.647+0000] {tasks.py:388} INFO - Price of 1569103 - TINTAESMALTESINTETICO: R$ 84,74
+[2022-09-26T19:24:17.648+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:21.048+0000] {tasks.py:388} INFO - Price of 1567821 - CURVAEMPVCRIGIDO90: R$ 15,14
+[2022-09-26T19:24:21.048+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:24.866+0000] {tasks.py:388} INFO - Price of 1567763 - JOELHO90SOLDAVEL: R$ 12,66
+[2022-09-26T19:24:24.866+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:28.313+0000] {tasks.py:388} INFO - Price of 1554272 - TUBODELIGACAODEPVC: R$ 54,76
+[2022-09-26T19:24:28.313+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:32.072+0000] {tasks.py:388} INFO - Price of 1554287 - FITAPARAVEDACAO: R$ 4,65
+[2022-09-26T19:24:32.073+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:35.628+0000] {tasks.py:388} INFO - Price of 1567756 - INTERRUPTORDEEMBUTIR: R$ 7,13
+[2022-09-26T19:24:35.628+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:39.396+0000] {tasks.py:391} INFO - Skipping element errors to: https://tudodemelhorparavoce.com.br/produto/1088-joelho-45%c2%ba-100mm-tigre
+[2022-09-26T19:24:39.396+0000] {tasks.py:392} INFO - Error: Message: Unable to locate element: .col-sm-12.col-md-7.col-xs-7 > h3
+Stacktrace:
+WebDriverError@chrome://marionette/content/error.js:175:5
+NoSuchElementError@chrome://marionette/content/error.js:387:5
+element.find/</<@chrome://marionette/content/element.js:331:16
+
+[2022-09-26T19:24:39.397+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:43.433+0000] {tasks.py:388} INFO - Price of 1567814 - JUNCAOSIMPLESDEPVCRIGIDO45: R$ 12,93
+[2022-09-26T19:24:43.433+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:47.344+0000] {tasks.py:388} INFO - Price of 1569067 - TEDEINSPECAO: R$ 53,86
+[2022-09-26T19:24:47.344+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:50.678+0000] {tasks.py:388} INFO - Price of 1567754 - LUVADEREDUCAO: R$ 9,77
+[2022-09-26T19:24:50.678+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:54.872+0000] {tasks.py:388} INFO - Price of 1567788 - DISJUNTORTRIPOLAR: R$ 84,56
+[2022-09-26T19:24:54.872+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:24:58.515+0000] {tasks.py:388} INFO - Price of 1567808 - CIMENTOBRANCO: R$ 3,35
+[2022-09-26T19:24:58.516+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:02.286+0000] {tasks.py:388} INFO - Price of 1567768 - JOELHOEMPVCRIGIDO90deg: R$ 3,81
+[2022-09-26T19:25:02.286+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:05.653+0000] {tasks.py:388} INFO - Price of 1567759 - BUCHADEREDUCAO: R$ 0,95
+[2022-09-26T19:25:05.654+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:09.548+0000] {tasks.py:388} INFO - Price of 1554263 - SIFAOPARALAVATORIOEMPVC: R$ 53,48
+[2022-09-26T19:25:09.548+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:12.937+0000] {tasks.py:388} INFO - Price of 1567760 - BUCHADEREDUCAO: R$ 8,98
+[2022-09-26T19:25:12.937+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:16.404+0000] {tasks.py:388} INFO - Price of 1569111 - FITAVEDAROSCA: R$ 4,65
+[2022-09-26T19:25:16.404+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:20.117+0000] {tasks.py:388} INFO - Price of 1567767 - JOELHODEREDUCAO90: R$ 7,21
+[2022-09-26T19:25:20.118+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:23.582+0000] {tasks.py:388} INFO - Price of 1554269 - TOMADAHEXAGONAL: R$ 28,06
+[2022-09-26T19:25:23.583+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:27.388+0000] {tasks.py:388} INFO - Price of 1554283 - ADESIVOPLASTICOPARAPVC: R$ 11,05
+[2022-09-26T19:25:27.389+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:30.649+0000] {tasks.py:388} INFO - Price of 1567783 - LUVADEREDUCAOEMPVCSOLDAVEL: R$ 2,82
+[2022-09-26T19:25:30.649+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:34.401+0000] {tasks.py:388} INFO - Price of 1569059 - ADAPTADORSOLDAVELCURTO: R$ 17,55
+[2022-09-26T19:25:34.402+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:37.926+0000] {tasks.py:388} INFO - Price of 1554290 - SABONETEIRAEMMETAL: R$ 24,82
+[2022-09-26T19:25:37.927+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:41.706+0000] {tasks.py:388} INFO - Price of 1569098 - TINTAESMALTESINTETICO: R$ 84,74
+[2022-09-26T19:25:41.707+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:45.097+0000] {tasks.py:388} INFO - Price of 1567752 - JOELHO90DEPVCPARAESGOTO: R$ 28,60
+[2022-09-26T19:25:45.097+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:48.845+0000] {tasks.py:388} INFO - Price of 1569046 - TESOLDAVEL: R$ 17,29
+[2022-09-26T19:25:48.846+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:52.345+0000] {tasks.py:388} INFO - Price of 1569109 - TEXTURAPARASUPERFICIEINTERNAEEXTERNA: R$ 110,77
+[2022-09-26T19:25:52.346+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:56.296+0000] {tasks.py:388} INFO - Price of 1554260 - ESPUDEDELIGACAO: R$ 3,83
+[2022-09-26T19:25:56.296+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:25:59.839+0000] {tasks.py:388} INFO - Price of 1567791 - DISJUNTORTRIPOLAR: R$ 69,90
+[2022-09-26T19:25:59.840+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:26:03.735+0000] {tasks.py:388} INFO - Price of 1567762 - JOELHO90SOLDAVEL: R$ 9,14
+[2022-09-26T19:26:03.736+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:26:07.077+0000] {tasks.py:388} INFO - Price of 1554266 - INTERRUPTOR1SECAO: R$ 4,69
+[2022-09-26T19:26:07.077+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:26:10.875+0000] {tasks.py:388} INFO - Price of 1554267 - INTERRUPTOR2SECCOES: R$ 12,43
+[2022-09-26T19:26:10.876+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:26:14.337+0000] {tasks.py:388} INFO - Price of 1559692 - PORTADEMADEIRALISA: R$ 341,20
+[2022-09-26T19:26:14.337+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:26:18.512+0000] {tasks.py:388} INFO - Price of 1557779 - CAIXADAGUADEPOLIETILENO: R$ 271,43
+[2022-09-26T19:26:18.512+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:26:22.385+0000] {tasks.py:388} INFO - Price of 1569081 - TUBODEPVCPARAESGOTO: R$ 482,44
+[2022-09-26T19:26:22.385+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:26:25.745+0000] {tasks.py:388} INFO - Price of 1567805 - CURVA90LONGAESG: R$ 18,02
+[2022-09-26T19:26:25.745+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:26:29.245+0000] {tasks.py:388} INFO - Price of 1569093 - CAIXADAGUADEPOLIETILENOREDONDA: R$ 463,17
+[2022-09-26T19:26:29.245+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:26:34.806+0000] {tasks.py:388} INFO - Price of 1569066 - REDUCAOEXCENTRICADEPVC: R$ 13,69
+[2022-09-26T19:26:34.806+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:26:38.619+0000] {tasks.py:388} INFO - Price of 1567792 - ADESIVOPARATUBODEPVC: R$ 11,05
+[2022-09-26T19:26:38.619+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:26:42.197+0000] {tasks.py:388} INFO - Price of 1567801 - JOELHO90SOLDAVEL: R$ 2,92
+[2022-09-26T19:26:42.198+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:26:46.074+0000] {tasks.py:388} INFO - Price of 1567789 - ANELDEVEDACAOPARAVASOSANITARIO: R$ 14,24
+[2022-09-26T19:26:46.074+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:26:49.465+0000] {tasks.py:388} INFO - Price of 1569057 - VALVULADEESCOAMENTOINOX: R$ 54,78
+[2022-09-26T19:26:49.465+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:26:53.241+0000] {tasks.py:388} INFO - Price of 1567764 - LUVADEREDUCAOEMPVCRIGIDO: R$ 2,39
+[2022-09-26T19:26:53.241+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:26:56.688+0000] {tasks.py:388} INFO - Price of 1569052 - TORNEIRAPARAJARDIM: R$ 77,70
+[2022-09-26T19:26:56.688+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:00.536+0000] {tasks.py:388} INFO - Price of 1567800 - CONEXAOBUCHADEREDUCAOSOLDAVEL: R$ 25,94
+[2022-09-26T19:27:00.537+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:03.876+0000] {tasks.py:391} INFO - Skipping element errors to: https://tudodemelhorparavoce.com.br/produto/1336-sifao-50-plastico-branco-atlas
+[2022-09-26T19:27:03.877+0000] {tasks.py:392} INFO - Error: Message: Unable to locate element: .col-sm-12.col-md-7.col-xs-7 > h3
+Stacktrace:
+WebDriverError@chrome://marionette/content/error.js:175:5
+NoSuchElementError@chrome://marionette/content/error.js:387:5
+element.find/</<@chrome://marionette/content/element.js:331:16
+
+[2022-09-26T19:27:03.877+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:07.623+0000] {tasks.py:388} INFO - Price of 1554288 - KITDEFERRAGENSPARAMICTORIO: R$ 86,49
+[2022-09-26T19:27:07.624+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:11.070+0000] {tasks.py:388} INFO - Price of 1567810 - JUNCAOSIMPLESDEPVCRIGIDO45: R$ 24,53
+[2022-09-26T19:27:11.071+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:14.819+0000] {tasks.py:391} INFO - Skipping element errors to: https://tudodemelhorparavoce.com.br/produto/2627-barra-imperatriz-3140-aluminio-40cm
+[2022-09-26T19:27:14.820+0000] {tasks.py:392} INFO - Error: Message: Unable to locate element: .col-sm-12.col-md-7.col-xs-7 > h3
+Stacktrace:
+WebDriverError@chrome://marionette/content/error.js:175:5
+NoSuchElementError@chrome://marionette/content/error.js:387:5
+element.find/</<@chrome://marionette/content/element.js:331:16
+
+[2022-09-26T19:27:14.820+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:18.161+0000] {tasks.py:388} INFO - Price of 1567748 - LUVASIMPLES: R$ 3,34
+[2022-09-26T19:27:18.161+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:22.034+0000] {tasks.py:388} INFO - Price of 1569102 - TINTAESMALTESINTETICO: R$ 84,74
+[2022-09-26T19:27:22.035+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:25.624+0000] {tasks.py:388} INFO - Price of 1567771 - JOELHO45DEPVCPARAESGOTO: R$ 10,73
+[2022-09-26T19:27:25.625+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:29.405+0000] {tasks.py:388} INFO - Price of 1569073 - PLACACEGA: R$ 8,16
+[2022-09-26T19:27:29.406+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:32.761+0000] {tasks.py:388} INFO - Price of 1567817 - ROLOPARAPINTURADELASINTETICA: R$ 19,11
+[2022-09-26T19:27:32.762+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:36.492+0000] {tasks.py:388} INFO - Price of 1567753 - LUVASOLDAVEL: R$ 8,25
+[2022-09-26T19:27:36.493+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:39.892+0000] {tasks.py:388} INFO - Price of 1554273 - VALVULAPARALAVATORIOEMPVC: R$ 6,48
+[2022-09-26T19:27:39.892+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:43.797+0000] {tasks.py:388} INFO - Price of 1567778 - FITAVEDAROSCA: R$ 18,40
+[2022-09-26T19:27:43.798+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:47.154+0000] {tasks.py:391} INFO - Skipping element errors to: https://tudodemelhorparavoce.com.br/produto/1902-tanque-1-peca-080x050-branco-fibromax
+[2022-09-26T19:27:47.154+0000] {tasks.py:392} INFO - Error: Message: Unable to locate element: .col-sm-12.col-md-7.col-xs-7 > h3
+Stacktrace:
+WebDriverError@chrome://marionette/content/error.js:175:5
+NoSuchElementError@chrome://marionette/content/error.js:387:5
+element.find/</<@chrome://marionette/content/element.js:331:16
+
+[2022-09-26T19:27:47.155+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:50.932+0000] {tasks.py:388} INFO - Price of 1567749 - LUVASIMPLES: R$ 4,38
+[2022-09-26T19:27:50.933+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:54.759+0000] {tasks.py:388} INFO - Price of 1554262 - SIFAOFLEXIVELUNIVERSALEMPVC: R$ 56,16
+[2022-09-26T19:27:54.760+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:27:58.138+0000] {tasks.py:388} INFO - Price of 1554295 - LIGACAOFLEXIVELMETALICO: R$ 35,00
+[2022-09-26T19:27:58.139+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:03.324+0000] {tasks.py:388} INFO - Price of 1567829 - DISJUNTORMONOPOLAR: R$ 11,29
+[2022-09-26T19:28:03.325+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:06.646+0000] {tasks.py:388} INFO - Price of 1569107 - TINTAACRILICASEMIBRILHO: R$ 329,27
+[2022-09-26T19:28:06.647+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:10.475+0000] {tasks.py:388} INFO - Price of 1567809 - BUCHADEDEREDUCAOEMPVCPARAESGOTO: R$ 3,93
+[2022-09-26T19:28:10.476+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:14.068+0000] {tasks.py:388} INFO - Price of 1567806 - TINTAESMALTEBRILHANTE: R$ 164,31
+[2022-09-26T19:28:14.069+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:17.874+0000] {tasks.py:388} INFO - Price of 1569064 - NIPELDEPVCROSCAVEL: R$ 2,91
+[2022-09-26T19:28:17.875+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:21.500+0000] {tasks.py:388} INFO - Price of 1559691 - PORTADEMADEIRALISA: R$ 317,49
+[2022-09-26T19:28:21.500+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:25.295+0000] {tasks.py:388} INFO - Price of 1554261 - MICTORIODELOUCA: R$ 350,67
+[2022-09-26T19:28:25.296+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:28.546+0000] {tasks.py:391} INFO - Skipping element errors to: https://tudodemelhorparavoce.com.br/produto/179-massa-pva-15kg-caixa
+[2022-09-26T19:28:28.546+0000] {tasks.py:392} INFO - Error: Message: Unable to locate element: .col-sm-12.col-md-7.col-xs-7 > h3
+Stacktrace:
+WebDriverError@chrome://marionette/content/error.js:175:5
+NoSuchElementError@chrome://marionette/content/error.js:387:5
+element.find/</<@chrome://marionette/content/element.js:331:16
+
+[2022-09-26T19:28:28.546+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:32.326+0000] {tasks.py:391} INFO - Skipping element errors to: https://tudodemelhorparavoce.com.br/produto/1085-joelho-45%c2%ba-40mm-tigre
+[2022-09-26T19:28:32.326+0000] {tasks.py:392} INFO - Error: Message: Unable to locate element: .col-sm-12.col-md-7.col-xs-7 > h3
+Stacktrace:
+WebDriverError@chrome://marionette/content/error.js:175:5
+NoSuchElementError@chrome://marionette/content/error.js:387:5
+element.find/</<@chrome://marionette/content/element.js:331:16
+
+[2022-09-26T19:28:32.327+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:36.109+0000] {tasks.py:388} INFO - Price of 1554244 - CUBAEMINOX: R$ 131,48
+[2022-09-26T19:28:36.110+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:39.958+0000] {tasks.py:388} INFO - Price of 1559694 - PORTADEMADEIRALISA: R$ 239,76
+[2022-09-26T19:28:39.958+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:43.690+0000] {tasks.py:388} INFO - Price of 1554278 - TORNEIRADEMESAPARALAVATORIO: R$ 52,20
+[2022-09-26T19:28:43.691+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:47.279+0000] {tasks.py:388} INFO - Price of 1567765 - JOELHOEMPVCRIGIDO45deg: R$ 4,98
+[2022-09-26T19:28:47.280+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:51.076+0000] {tasks.py:388} INFO - Price of 1569105 - TINTAACRILICASEMIBRILHO: R$ 329,27
+[2022-09-26T19:28:51.077+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:55.042+0000] {tasks.py:388} INFO - Price of 1567812 - JUNCAOSIMPLESDEPVCRIGIDO45: R$ 30,99
+[2022-09-26T19:28:55.042+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:28:58.794+0000] {tasks.py:388} INFO - Price of 1554294 - TANQUEMARMOREGRANITOSINTETICO: R$ 420,10
+[2022-09-26T19:28:58.794+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:02.765+0000] {tasks.py:388} INFO - Price of 1554246 - CUBAEMINOX: R$ 263,66
+[2022-09-26T19:29:02.765+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:06.333+0000] {tasks.py:388} INFO - Price of 1569077 - CONJUNTODETOMADA: R$ 30,39
+[2022-09-26T19:29:06.334+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:10.050+0000] {tasks.py:391} INFO - Skipping element errors to: https://tudodemelhorparavoce.com.br/produto/2638-valvula-1623-ppia-amer-312-cromada
+[2022-09-26T19:29:10.050+0000] {tasks.py:392} INFO - Error: Message: Unable to locate element: .col-sm-12.col-md-7.col-xs-7 > h3
+Stacktrace:
+WebDriverError@chrome://marionette/content/error.js:175:5
+NoSuchElementError@chrome://marionette/content/error.js:387:5
+element.find/</<@chrome://marionette/content/element.js:331:16
+
+[2022-09-26T19:29:10.051+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:13.565+0000] {tasks.py:391} INFO - Skipping element errors to: https://tudodemelhorparavoce.com.br/produto/2014-argamassa-ac3-flexivel-cz-20kg
+[2022-09-26T19:29:13.566+0000] {tasks.py:392} INFO - Error: Message: Unable to locate element: .col-sm-12.col-md-7.col-xs-7 > h3
+Stacktrace:
+WebDriverError@chrome://marionette/content/error.js:175:5
+NoSuchElementError@chrome://marionette/content/error.js:387:5
+element.find/</<@chrome://marionette/content/element.js:331:16
+
+[2022-09-26T19:29:13.566+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:17.074+0000] {tasks.py:388} INFO - Price of 1554265 - SIFAOMETALICOPARAPIA: R$ 56,16
+[2022-09-26T19:29:17.075+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:20.910+0000] {tasks.py:388} INFO - Price of 1569330 - ARAMEGALVANIZADO: R$ 17,05
+[2022-09-26T19:29:20.911+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:24.274+0000] {tasks.py:388} INFO - Price of 1567787 - TELHADEFIBROCIMENTO: R$ 128,40
+[2022-09-26T19:29:24.275+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:28.071+0000] {tasks.py:388} INFO - Price of 1554277 - TORNEIRADEMESAPARALAVATORIO: R$ 241,01
+[2022-09-26T19:29:28.072+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:31.922+0000] {tasks.py:388} INFO - Price of 1569090 - CUBAEMACOINOX304: R$ 213,19
+[2022-09-26T19:29:31.924+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:35.810+0000] {tasks.py:388} INFO - Price of 1554245 - CUBAEMINOX: R$ 112,49
+[2022-09-26T19:29:35.811+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:39.187+0000] {tasks.py:388} INFO - Price of 1567772 - LUVADEREDUCAOEMPVCRIGIDO: R$ 5,00
+[2022-09-26T19:29:39.188+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:42.977+0000] {tasks.py:388} INFO - Price of 1567796 - INTERRUPTORDEEMBUTIR: R$ 7,06
+[2022-09-26T19:29:42.978+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:46.284+0000] {tasks.py:388} INFO - Price of 1567775 - CURVAEMPVCRIGIDO90PARAESGOTO: R$ 6,59
+[2022-09-26T19:29:46.284+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:50.223+0000] {tasks.py:388} INFO - Price of 1567790 - CUMEEIRANORMALDEFIBROCIMENTOPARATELHA: R$ 50,78
+[2022-09-26T19:29:50.223+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:54.007+0000] {tasks.py:388} INFO - Price of 1569087 - VASOSANITARIOCONVENCIONAL: R$ 349,22
+[2022-09-26T19:29:54.007+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:29:57.744+0000] {tasks.py:388} INFO - Price of 1567807 - MICTORIOEMLOUCA: R$ 350,67
+[2022-09-26T19:29:57.745+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:01.160+0000] {tasks.py:388} INFO - Price of 1569092 - GRELHAEMACOINOX: R$ 112,69
+[2022-09-26T19:30:01.161+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:05.719+0000] {tasks.py:388} INFO - Price of 1554275 - VALVULADEDESCARGAPARAMICTORIO: R$ 361,55
+[2022-09-26T19:30:05.720+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:09.138+0000] {tasks.py:388} INFO - Price of 1569050 - REGISTRODEGAVETABRUTO: R$ 91,12
+[2022-09-26T19:30:09.138+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:12.979+0000] {tasks.py:388} INFO - Price of 1569096 - TINTAESMALTESINTETICO: R$ 84,74
+[2022-09-26T19:30:12.979+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:16.464+0000] {tasks.py:388} INFO - Price of 1569099 - TINTAESMALTESINTETICO: R$ 84,74
+[2022-09-26T19:30:16.465+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:20.065+0000] {tasks.py:388} INFO - Price of 1557780 - TELHADEFIBROCIMENTO: R$ 21,64
+[2022-09-26T19:30:20.066+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:23.899+0000] {tasks.py:388} INFO - Price of 1554258 - CHUVEIROELETRICOEMPVC: R$ 51,54
+[2022-09-26T19:30:23.900+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:27.417+0000] {tasks.py:388} INFO - Price of 1567774 - JOELHO90DEPVCPARAESGOTO: R$ 10,95
+[2022-09-26T19:30:27.418+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:31.187+0000] {tasks.py:388} INFO - Price of 1569060 - CAPEMPVCPARAESGOTO: R$ 12,71
+[2022-09-26T19:30:31.188+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:34.825+0000] {tasks.py:388} INFO - Price of 1554280 - TORNEIRADEMESAPARAPIA: R$ 131,80
+[2022-09-26T19:30:34.826+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:38.597+0000] {tasks.py:388} INFO - Price of 1569069 - CONJUNTODEINTERRUPTORPARALELO: R$ 14,54
+[2022-09-26T19:30:38.597+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:41.969+0000] {tasks.py:388} INFO - Price of 1567825 - TOMADAPARATELEFONE: R$ 7,29
+[2022-09-26T19:30:41.969+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:45.833+0000] {tasks.py:388} INFO - Price of 1567798 - CONEXAOBUCHADEREDUCAODEPVCSOLDAVEL: R$ 15,96
+[2022-09-26T19:30:45.833+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:49.248+0000] {tasks.py:388} INFO - Price of 1569110 - FITAVEDAROSCA: R$ 9,34
+[2022-09-26T19:30:49.248+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:53.084+0000] {tasks.py:388} INFO - Price of 1569101 - TINTAESMALTESINTETICO: R$ 84,74
+[2022-09-26T19:30:53.084+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:30:56.555+0000] {tasks.py:388} INFO - Price of 1554270 - TOMADALOGICA: R$ 13,98
+[2022-09-26T19:30:56.555+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:31:00.617+0000] {tasks.py:388} INFO - Price of 1567786 - MASSAPARAPAREDEPVA: R$ 39,71
+[2022-09-26T19:31:00.618+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:31:04.405+0000] {tasks.py:388} INFO - Price of 1567785 - LIXAPARAPAREDE: R$ 1,51
+[2022-09-26T19:31:04.405+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:31:08.306+0000] {tasks.py:388} INFO - Price of 1554285 - ASSENTOEMPOLIPROPILENOEINJETADODEALTADURABILIDADE: R$ 223,20
+[2022-09-26T19:31:08.307+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:31:11.829+0000] {tasks.py:388} INFO - Price of 1569063 - LUVASOLDAVEL: R$ 3,28
+[2022-09-26T19:31:11.830+0000] {tasks.py:327} INFO - Printing information
+[2022-09-26T19:31:11.919+0000] {tasks.py:415} INFO - Saved screenshots and prices
+[2022-09-26T19:31:11.932+0000] {tasks.py:249} INFO - Test not passed
+[2022-09-26T19:31:11.933+0000] {tasks.py:251} INFO - Difference of 16 prices
+[2022-09-26T19:31:11.982+0000] {tasks.py:272} INFO - Requested prices: 181
+[2022-09-26T19:31:11.982+0000] {tasks.py:273} INFO - Scraped prices: 165
+[2022-09-26T19:31:11.983+0000] {tasks.py:274} INFO - Day of the scraping: 26/09/2022
+[2022-09-26T19:31:12.084+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-09-26T19:31:12.196+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=tudo_melhor, task_id=colector, execution_date=20220926T165629, start_date=20220926T192008, end_date=20220926T193112
+[2022-09-26T19:31:12.292+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-09-26T19:31:12.397+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

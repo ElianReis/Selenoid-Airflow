@@ -1,0 +1,44 @@
+[2022-10-03T12:49:47.771+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: eletrica_bsb.carga_creation scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-03T12:49:47.800+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: eletrica_bsb.carga_creation scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-03T12:49:47.801+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-03T12:49:47.803+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-10-03T12:49:47.804+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-03T12:49:47.830+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): carga_creation> on 2022-09-01 00:00:00+00:00
+[2022-10-03T12:49:47.841+0000] {standard_task_runner.py:54} INFO - Started process 964 to run task
+[2022-10-03T12:49:47.845+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'eletrica_bsb', 'carga_creation', 'scheduled__2022-09-01T00:00:00+00:00', '--job-id', '394', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpphphxteq']
+[2022-10-03T12:49:47.846+0000] {standard_task_runner.py:83} INFO - Job 394: Subtask carga_creation
+[2022-10-03T12:49:47.847+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-10-03T12:49:48.501+0000] {task_command.py:384} INFO - Running <TaskInstance: eletrica_bsb.carga_creation scheduled__2022-09-01T00:00:00+00:00 [running]> on host 9a36b0424536
+[2022-10-03T12:49:48.586+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=eletrica_bsb
+AIRFLOW_CTX_TASK_ID=carga_creation
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-01T00:00:00+00:00
+[2022-10-03T12:49:48.588+0000] {tasks.py:530} INFO - Reading results from collect dataframe
+[2022-10-03T12:49:48.588+0000] {tasks.py:39} INFO - Defining DEC to export information
+[2022-10-03T12:49:48.608+0000] {tasks.py:536} INFO - Renaming columns
+[2022-10-03T12:49:48.609+0000] {tasks.py:539} INFO - Creating column with print information
+[2022-10-03T12:49:48.612+0000] {tasks.py:550} INFO - Fill nan on dataset
+[2022-10-03T12:49:48.615+0000] {tasks.py:553} INFO - Adapting price to the Carga file
+[2022-10-03T12:49:48.621+0000] {tasks.py:453} INFO - Carga being prepared for expected data: 10/10/2022
+[2022-10-03T12:49:48.622+0000] {tasks.py:559} INFO - Filling null values
+[2022-10-03T12:49:48.623+0000] {tasks.py:487} INFO - Naming the price null values
+[2022-10-03T12:49:48.624+0000] {tasks.py:490} INFO - Fill Sinonimous column
+[2022-10-03T12:49:48.626+0000] {tasks.py:497} INFO - Creating a justification for null prices
+[2022-10-03T12:49:48.626+0000] {tasks.py:504} INFO - Fill URL column
+[2022-10-03T12:49:48.627+0000] {tasks.py:511} INFO - Fill date column
+[2022-10-03T12:49:48.628+0000] {tasks.py:562} INFO - Fill regions column
+[2022-10-03T12:49:48.630+0000] {tasks.py:568} INFO - Reordering column
+[2022-10-03T12:49:48.631+0000] {tasks.py:570} INFO - Finishing the process
+[2022-10-03T12:49:48.632+0000] {tasks.py:571} INFO - Total prices: 23
+[2022-10-03T12:49:48.642+0000] {warnings.py:110} WARNING - /opt/***/dags/tasks.py:581: FutureWarning: As the xlwt package is no longer maintained, the xlwt engine will be removed in a future version of pandas. This is the only engine in pandas that supports writing in the xls format. Install openpyxl and write to an xlsx file instead. You can set the option io.excel.xls.writer to 'xlwt' to silence this warning. While this option is deprecated and will also raise a warning, it can be globally set and the warning suppressed.
+  ).to_excel(f"{EXPORT}", index=False)
+
+[2022-10-03T12:49:48.693+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-10-03T12:49:48.708+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=eletrica_bsb, task_id=carga_creation, execution_date=20220901T000000, start_date=20221003T124947, end_date=20221003T124948
+[2022-10-03T12:49:48.740+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-10-03T12:49:48.770+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

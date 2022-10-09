@@ -1,0 +1,13 @@
+{
+    "firefox": {
+        "default": "105.0",
+        "versions": {
+            "105.0": {
+                "image": "selenoid/firefox:105.0",
+                "port": "4444",
+                "path": "/wd/hub",
+                "tmpfs": {"/tmp":"size=512m"}
+            }
+        }
+    }
+}

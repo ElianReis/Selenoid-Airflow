@@ -1,0 +1,65 @@
+[2022-09-27T14:47:41.593+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: saraiva.colector scheduled__2022-08-21T00:00:00+00:00 [queued]>
+[2022-09-27T14:47:41.603+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: saraiva.colector scheduled__2022-08-21T00:00:00+00:00 [queued]>
+[2022-09-27T14:47:41.603+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-27T14:47:41.603+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-09-27T14:47:41.604+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-27T14:47:41.617+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-08-21 00:00:00+00:00
+[2022-09-27T14:47:41.627+0000] {standard_task_runner.py:54} INFO - Started process 3203 to run task
+[2022-09-27T14:47:41.629+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'saraiva', 'colector', 'scheduled__2022-08-21T00:00:00+00:00', '--job-id', '289', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpmsrmim7f']
+[2022-09-27T14:47:41.629+0000] {standard_task_runner.py:83} INFO - Job 289: Subtask colector
+[2022-09-27T14:47:41.630+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-09-27T14:47:42.085+0000] {task_command.py:384} INFO - Running <TaskInstance: saraiva.colector scheduled__2022-08-21T00:00:00+00:00 [running]> on host 230d0404a0b6
+[2022-09-27T14:47:42.162+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=saraiva
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-21T00:00:00+00:00
+[2022-09-27T14:47:42.163+0000] {tasks.py:42} INFO - Defining DEC to export information
+[2022-09-27T14:47:42.168+0000] {tasks.py:357} INFO - Reading prep dataframe
+[2022-09-27T14:47:42.176+0000] {tasks.py:150} INFO - Instantiating the Browser with the requested settings
+[2022-09-27T14:47:45.672+0000] {tasks.py:164} INFO - Browser configured
+[2022-09-27T14:47:45.673+0000] {tasks.py:287} INFO - Removing nan URL values
+[2022-09-27T14:47:45.675+0000] {tasks.py:288} INFO - Requested prices before: 11
+[2022-09-27T14:47:45.680+0000] {tasks.py:293} INFO - Requested prices after: 11
+[2022-09-27T14:48:07.859+0000] {tasks.py:387} INFO - Price of 1546801 - LIVRONAOFICCAOEUSOUMALALA: R$ 41,90
+[2022-09-27T14:48:07.860+0000] {tasks.py:326} INFO - Printing information
+[2022-09-27T14:48:17.390+0000] {tasks.py:387} INFO - Price of 1546815 - LIVROFICCAOMUNDODESOFIA: R$ 48,90
+[2022-09-27T14:48:17.391+0000] {tasks.py:326} INFO - Printing information
+[2022-09-27T14:48:21.570+0000] {tasks.py:387} INFO - Price of 1546803 - LIVRONAOFICCAOMEDICINADOSHORRORESAHISTORIADEJOSEPHLISTER: R$ 63,90
+[2022-09-27T14:48:21.570+0000] {tasks.py:326} INFO - Printing information
+[2022-09-27T14:48:26.571+0000] {tasks.py:387} INFO - Price of 1561815 - LIVRODENAOFICCAOSUZANEASSASSINAEMANIPULADORA: R$ 47,20
+[2022-09-27T14:48:26.572+0000] {tasks.py:326} INFO - Printing information
+[2022-09-27T14:48:30.453+0000] {tasks.py:390} INFO - Skipping element errors to: https://www.saraiva.com.br/especialista-em-pessoas-solucoes-biblicas-e-inteligentes-para-lidar-com-todo-tipo-de-gente-10637338/p
+[2022-09-27T14:48:30.454+0000] {tasks.py:391} INFO - Error: Message: Unable to locate element: .mb-0.price-destaque
+Stacktrace:
+WebDriverError@chrome://marionette/content/error.js:175:5
+NoSuchElementError@chrome://marionette/content/error.js:387:5
+element.find/</<@chrome://marionette/content/element.js:331:16
+
+[2022-09-27T14:48:30.455+0000] {tasks.py:326} INFO - Printing information
+[2022-09-27T14:48:34.808+0000] {tasks.py:387} INFO - Price of 1546809 - LIVRODEFICCAOOTEOREMAKATHERINE: R$ 36,90
+[2022-09-27T14:48:34.808+0000] {tasks.py:326} INFO - Printing information
+[2022-09-27T14:48:39.298+0000] {tasks.py:387} INFO - Price of 1561816 - LIVRONAOFICCAONIETZSCHEBIOGRAFIADEUMATRAGEDIA: R$ 50,90
+[2022-09-27T14:48:39.299+0000] {tasks.py:326} INFO - Printing information
+[2022-09-27T14:48:43.719+0000] {tasks.py:387} INFO - Price of 1575373 - LIVROFICCAOFILHOSDEDUNA: R$ 79,90
+[2022-09-27T14:48:43.720+0000] {tasks.py:326} INFO - Printing information
+[2022-09-27T14:48:48.454+0000] {tasks.py:387} INFO - Price of 1546811 - LIVRODENAOFICCAOMAISESPERTOQUEODIABO: R$ 29,90
+[2022-09-27T14:48:48.455+0000] {tasks.py:326} INFO - Printing information
+[2022-09-27T14:48:55.454+0000] {tasks.py:387} INFO - Price of 1546812 - LIVRODENAOFICCAOEUSEIPORQUEOPASSAROCANTANAGAIOLA: R$ 38,40
+[2022-09-27T14:48:55.455+0000] {tasks.py:326} INFO - Printing information
+[2022-09-27T14:48:59.517+0000] {tasks.py:387} INFO - Price of 1429395 - LIVRODEFICCAOFAHRENHEIT451: R$ 36,90
+[2022-09-27T14:48:59.518+0000] {tasks.py:326} INFO - Printing information
+[2022-09-27T14:48:59.721+0000] {tasks.py:414} INFO - Saved screenshots and prices
+[2022-09-27T14:48:59.722+0000] {tasks.py:248} INFO - Test not passed
+[2022-09-27T14:48:59.722+0000] {tasks.py:250} INFO - Difference of 1 prices
+[2022-09-27T14:48:59.725+0000] {tasks.py:271} INFO - Requested prices: 11
+[2022-09-27T14:48:59.726+0000] {tasks.py:272} INFO - Scraped prices: 10
+[2022-09-27T14:48:59.727+0000] {tasks.py:273} INFO - Day of the scraping: 27/09/2022
+[2022-09-27T14:48:59.741+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-09-27T14:48:59.761+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=saraiva, task_id=colector, execution_date=20220821T000000, start_date=20220927T144741, end_date=20220927T144859
+[2022-09-27T14:48:59.806+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-09-27T14:48:59.834+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

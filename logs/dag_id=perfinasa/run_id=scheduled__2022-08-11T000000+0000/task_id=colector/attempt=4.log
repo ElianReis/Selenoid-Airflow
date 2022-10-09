@@ -1,0 +1,61 @@
+[2022-09-27T20:49:32.034+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: perfinasa.colector scheduled__2022-08-11T00:00:00+00:00 [queued]>
+[2022-09-27T20:49:32.043+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: perfinasa.colector scheduled__2022-08-11T00:00:00+00:00 [queued]>
+[2022-09-27T20:49:32.043+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-27T20:49:32.043+0000] {taskinstance.py:1363} INFO - Starting attempt 4 of 4
+[2022-09-27T20:49:32.044+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-27T20:49:32.055+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-08-11 00:00:00+00:00
+[2022-09-27T20:49:32.059+0000] {standard_task_runner.py:54} INFO - Started process 267 to run task
+[2022-09-27T20:49:32.061+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'perfinasa', 'colector', 'scheduled__2022-08-11T00:00:00+00:00', '--job-id', '305', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp2ztt8m3x']
+[2022-09-27T20:49:32.062+0000] {standard_task_runner.py:83} INFO - Job 305: Subtask colector
+[2022-09-27T20:49:32.063+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-09-27T20:49:32.441+0000] {task_command.py:384} INFO - Running <TaskInstance: perfinasa.colector scheduled__2022-08-11T00:00:00+00:00 [running]> on host 4f0e9a210a6d
+[2022-09-27T20:49:32.500+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=perfinasa
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-11T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=4
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-11T00:00:00+00:00
+[2022-09-27T20:49:32.501+0000] {tasks.py:42} INFO - Defining DEC to export information
+[2022-09-27T20:49:32.506+0000] {tasks.py:357} INFO - Reading prep dataframe
+[2022-09-27T20:49:32.514+0000] {tasks.py:150} INFO - Instantiating the Browser with the requested settings
+[2022-09-27T20:49:35.250+0000] {tasks.py:164} INFO - Browser configured
+[2022-09-27T20:49:35.251+0000] {tasks.py:287} INFO - Removing nan URL values
+[2022-09-27T20:49:35.252+0000] {tasks.py:288} INFO - Requested prices before: 28
+[2022-09-27T20:49:35.254+0000] {tasks.py:293} INFO - Requested prices after: 21
+[2022-09-27T20:49:35.254+0000] {distinct.py:27} INFO - Add size specifications to dataframe
+[2022-09-27T20:49:35.255+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/tasks.py", line 409, in colector
+    date=date,
+  File "/opt/airflow/dags/tasks.py", line 427, in conditional_distincter
+    config=config,
+  File "/opt/airflow/dags/distinct.py", line 30, in __init__
+    pd.read_csv("src/resources/size.csv", sep=";", dtype=str),
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/base_parser.py", line 229, in _open_handles
+    errors=kwds.get("encoding_errors", "strict"),
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: 'src/resources/size.csv'
+[2022-09-27T20:49:35.270+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=perfinasa, task_id=colector, execution_date=20220811T000000, start_date=20220927T204932, end_date=20220927T204935
+[2022-09-27T20:49:35.282+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 305 for task colector ([Errno 2] No such file or directory: 'src/resources/size.csv'; 267)
+[2022-09-27T20:49:35.323+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-09-27T20:49:35.349+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

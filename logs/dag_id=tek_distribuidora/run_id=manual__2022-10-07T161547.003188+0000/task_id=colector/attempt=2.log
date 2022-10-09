@@ -1,0 +1,52 @@
+[2022-10-07T16:20:36.308+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tek_distribuidora.colector manual__2022-10-07T16:15:47.003188+00:00 [queued]>
+[2022-10-07T16:20:36.316+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tek_distribuidora.colector manual__2022-10-07T16:15:47.003188+00:00 [queued]>
+[2022-10-07T16:20:36.317+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-07T16:20:36.317+0000] {taskinstance.py:1363} INFO - Starting attempt 2 of 2
+[2022-10-07T16:20:36.317+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-07T16:20:36.329+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-10-07 16:15:47.003188+00:00
+[2022-10-07T16:20:36.333+0000] {standard_task_runner.py:54} INFO - Started process 2597 to run task
+[2022-10-07T16:20:36.335+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tek_distribuidora', 'colector', 'manual__2022-10-07T16:15:47.003188+00:00', '--job-id', '435', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpl1zwuvpb']
+[2022-10-07T16:20:36.336+0000] {standard_task_runner.py:83} INFO - Job 435: Subtask colector
+[2022-10-07T16:20:36.336+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-10-07T16:20:36.726+0000] {task_command.py:384} INFO - Running <TaskInstance: tek_distribuidora.colector manual__2022-10-07T16:15:47.003188+00:00 [running]> on host 9a36b0424536
+[2022-10-07T16:20:36.788+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tek_distribuidora
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-07T16:15:47.003188+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-10-07T16:15:47.003188+00:00
+[2022-10-07T16:20:36.788+0000] {tasks.py:39} INFO - Defining DEC to export information
+[2022-10-07T16:20:36.794+0000] {tasks.py:360} INFO - Reading prep dataframe
+[2022-10-07T16:20:36.801+0000] {tasks.py:153} INFO - Instantiating the Browser with the requested settings
+[2022-10-07T16:20:39.405+0000] {tasks.py:167} INFO - Browser configured
+[2022-10-07T16:20:39.406+0000] {tasks.py:290} INFO - Removing nan URL values
+[2022-10-07T16:20:39.408+0000] {tasks.py:291} INFO - Requested prices before: 4
+[2022-10-07T16:20:39.414+0000] {tasks.py:296} INFO - Requested prices after: 4
+[2022-10-07T16:20:47.607+0000] {tasks.py:390} INFO - Price of 1572092 - RACKDEPISOFECHADOCOMPORTAEMACO: 1.287,60
+[2022-10-07T16:20:47.608+0000] {tasks.py:329} INFO - Printing information
+[2022-10-07T16:20:51.279+0000] {tasks.py:390} INFO - Price of 1572091 - RACKDEPISOFECHADOCOMPORTAEMACO: 2.254,50
+[2022-10-07T16:20:51.280+0000] {tasks.py:329} INFO - Printing information
+[2022-10-07T16:20:55.115+0000] {tasks.py:390} INFO - Price of 1572090 - COTOVELOEXTERNOPARACANALETADEPLASTICO: 4,50
+[2022-10-07T16:20:55.115+0000] {tasks.py:329} INFO - Printing information
+[2022-10-07T16:20:59.092+0000] {tasks.py:393} INFO - Skipping element errors to: https://www.tekdistribuidor.com/regua-filtro-de-linha-8-tomadas-para-rack-fiolux
+[2022-10-07T16:20:59.092+0000] {tasks.py:394} INFO - Error: Message: Unable to locate element: #variacaoPreco
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:404:5
+element.find/</<@chrome://remote/content/marionette/element.js:291:16
+
+[2022-10-07T16:20:59.092+0000] {tasks.py:329} INFO - Printing information
+[2022-10-07T16:20:59.191+0000] {tasks.py:417} INFO - Saved screenshots and prices
+[2022-10-07T16:20:59.192+0000] {tasks.py:251} INFO - Test not passed
+[2022-10-07T16:20:59.193+0000] {tasks.py:253} INFO - Difference of 1 prices
+[2022-10-07T16:20:59.194+0000] {tasks.py:274} INFO - Requested prices: 4
+[2022-10-07T16:20:59.195+0000] {tasks.py:275} INFO - Scraped prices: 3
+[2022-10-07T16:20:59.195+0000] {tasks.py:276} INFO - Day of the scraping: 07/10/2022
+[2022-10-07T16:20:59.270+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-10-07T16:20:59.281+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=tek_distribuidora, task_id=colector, execution_date=20221007T161547, start_date=20221007T162036, end_date=20221007T162059
+[2022-10-07T16:20:59.372+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-10-07T16:20:59.425+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

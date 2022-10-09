@@ -1,0 +1,38 @@
+[2022-09-30T15:49:34.923+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: casa_das_ferragens.colector manual__2022-09-30T15:34:18.697065+00:00 [queued]>
+[2022-09-30T15:49:34.931+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: casa_das_ferragens.colector manual__2022-09-30T15:34:18.697065+00:00 [queued]>
+[2022-09-30T15:49:34.931+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-30T15:49:34.932+0000] {taskinstance.py:1363} INFO - Starting attempt 3 of 3
+[2022-09-30T15:49:34.932+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-30T15:49:34.943+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-09-30 15:34:18.697065+00:00
+[2022-09-30T15:49:34.947+0000] {standard_task_runner.py:54} INFO - Started process 78 to run task
+[2022-09-30T15:49:34.949+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'casa_das_ferragens', 'colector', 'manual__2022-09-30T15:34:18.697065+00:00', '--job-id', '332', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp7bdnnmkg']
+[2022-09-30T15:49:34.949+0000] {standard_task_runner.py:83} INFO - Job 332: Subtask colector
+[2022-09-30T15:49:34.950+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-09-30T15:49:35.335+0000] {task_command.py:384} INFO - Running <TaskInstance: casa_das_ferragens.colector manual__2022-09-30T15:34:18.697065+00:00 [running]> on host dc20523c063c
+[2022-09-30T15:49:35.392+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=casa_das_ferragens
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-30T15:34:18.697065+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-30T15:34:18.697065+00:00
+[2022-09-30T15:49:35.393+0000] {tasks.py:39} INFO - Defining DEC to export information
+[2022-09-30T15:49:35.399+0000] {tasks.py:343} INFO - Reading prep dataframe
+[2022-09-30T15:49:35.412+0000] {tasks.py:146} INFO - Instantiating the Browser with the requested settings
+[2022-09-30T15:49:39.207+0000] {tasks.py:150} INFO - Browser configured
+[2022-09-30T15:49:39.207+0000] {tasks.py:273} INFO - Removing nan URL values
+[2022-09-30T15:49:39.208+0000] {tasks.py:274} INFO - Requested prices before: 1
+[2022-09-30T15:49:39.249+0000] {tasks.py:279} INFO - Requested prices after: 1
+[2022-09-30T15:49:43.616+0000] {tasks.py:373} INFO - Price of 1574829 - COLADECONTATO: R$381,90
+[2022-09-30T15:49:43.617+0000] {tasks.py:312} INFO - Printing information
+[2022-09-30T15:49:43.814+0000] {tasks.py:400} INFO - Saved screenshots and prices
+[2022-09-30T15:49:43.814+0000] {tasks.py:231} INFO - Test passed
+[2022-09-30T15:49:43.816+0000] {tasks.py:257} INFO - Requested prices: 1
+[2022-09-30T15:49:43.816+0000] {tasks.py:258} INFO - Scraped prices: 1
+[2022-09-30T15:49:43.816+0000] {tasks.py:259} INFO - Day of the scraping: 30/09/2022
+[2022-09-30T15:49:43.832+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-09-30T15:49:43.841+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=casa_das_ferragens, task_id=colector, execution_date=20220930T153418, start_date=20220930T154934, end_date=20220930T154943
+[2022-09-30T15:49:43.868+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-09-30T15:49:43.885+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

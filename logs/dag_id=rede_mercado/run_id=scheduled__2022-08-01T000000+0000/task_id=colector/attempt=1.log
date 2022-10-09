@@ -1,0 +1,481 @@
+[2022-09-26T02:55:38.418+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: rede_mercado.colector scheduled__2022-08-01T00:00:00+00:00 [queued]>
+[2022-09-26T02:55:38.436+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: rede_mercado.colector scheduled__2022-08-01T00:00:00+00:00 [queued]>
+[2022-09-26T02:55:38.437+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T02:55:38.437+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-09-26T02:55:38.438+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T02:55:38.466+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-08-01 00:00:00+00:00
+[2022-09-26T02:55:38.470+0000] {standard_task_runner.py:54} INFO - Started process 279 to run task
+[2022-09-26T02:55:38.473+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'rede_mercado', 'colector', 'scheduled__2022-08-01T00:00:00+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpqkclw4h7']
+[2022-09-26T02:55:38.473+0000] {standard_task_runner.py:83} INFO - Job 46: Subtask colector
+[2022-09-26T02:55:38.474+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-09-26T02:55:38.932+0000] {task_command.py:384} INFO - Running <TaskInstance: rede_mercado.colector scheduled__2022-08-01T00:00:00+00:00 [running]> on host 8600278d5a66
+[2022-09-26T02:55:39.003+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=rede_mercado
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-01T00:00:00+00:00
+[2022-09-26T02:55:39.004+0000] {tasks.py:43} INFO - Defining DEC to export information
+[2022-09-26T02:55:39.011+0000] {tasks.py:349} INFO - Reading prep dataframe
+[2022-09-26T02:55:39.033+0000] {tasks.py:151} INFO - Instantiating the Browser with the requested settings
+[2022-09-26T02:55:39.034+0000] {tasks.py:156} INFO - Browser configured
+[2022-09-26T02:55:39.036+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2022-09-26T02:55:39.174+0000] {logger.py:11} INFO - Get LATEST geckodriver version for 102.3 firefox
+[2022-09-26T02:55:39.175+0000] {logger.py:11} INFO - GH_TOKEN will be used to perform requests
+[2022-09-26T02:55:39.558+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/geckodriver/linux64/0.31/geckodriver] found in cache
+[2022-09-26T02:55:46.172+0000] {tasks.py:279} INFO - Removing nan URL values
+[2022-09-26T02:55:46.199+0000] {tasks.py:280} INFO - Requested prices before: 115
+[2022-09-26T02:55:46.271+0000] {tasks.py:285} INFO - Requested prices after: 115
+[2022-09-26T02:55:51.456+0000] {tasks.py:379} INFO - Price of 1567975 - LUVADEREDUCAOEMPVCSOLDAVEL: 2,80
+[2022-09-26T02:55:51.456+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:55:54.559+0000] {tasks.py:379} INFO - Price of 1568046 - ELETRODO: 15,01
+[2022-09-26T02:55:54.560+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:55:57.367+0000] {tasks.py:379} INFO - Price of 1568052 - PREGOCOMCABECA: 25,00
+[2022-09-26T02:55:57.368+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:56:01.619+0000] {tasks.py:379} INFO - Price of 1568087 - TUBODEPVCPARAESGOTO: 41,84
+[2022-09-26T02:56:01.620+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:56:04.771+0000] {tasks.py:379} INFO - Price of 1569603 - LUVA: 6,99
+[2022-09-26T02:56:04.773+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:56:07.799+0000] {tasks.py:379} INFO - Price of 1568031 - ARCODESERRA: 28,32
+[2022-09-26T02:56:07.800+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:56:14.837+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/areia-branca-media-45588/
+[2022-09-26T02:56:14.863+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:56:14.894+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:56:19.010+0000] {tasks.py:379} INFO - Price of 1568018 - MASSAADESIVAPLASTICA: 16,00
+[2022-09-26T02:56:19.011+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:56:21.682+0000] {tasks.py:379} INFO - Price of 1568016 - DISJUNTORNEMATRIPOLAR: 95,00
+[2022-09-26T02:56:21.683+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:56:23.783+0000] {tasks.py:379} INFO - Price of 1569606 - QUADRODEDISTRIBUICAO: 49,90
+[2022-09-26T02:56:23.784+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:56:26.506+0000] {tasks.py:379} INFO - Price of 1568070 - ADAPTADOREMPVCSOLDAVEL: 4,50
+[2022-09-26T02:56:26.506+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:56:37.414+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/fita-veda-rosca-polyfita-18mmx10mt-46522/
+[2022-09-26T02:56:37.423+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:56:37.436+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:56:40.932+0000] {tasks.py:379} INFO - Price of 1568008 - ARRUELALISA: 0,25
+[2022-09-26T02:56:40.932+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:56:49.693+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/graxa-1kg-dimec-17-45896/
+[2022-09-26T02:56:49.723+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:56:49.724+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:56:59.280+0000] {tasks.py:379} INFO - Price of 1568013 - REATORELETRONICOPARALAMPADAFLUORESCENTE: 42,00
+[2022-09-26T02:56:59.280+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:01.488+0000] {tasks.py:379} INFO - Price of 1568030 - PREGOCOMCABECAEMACOGALVANIZADO: 3,50
+[2022-09-26T02:57:01.488+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:04.890+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/brita-n-3-45682/
+[2022-09-26T02:57:04.890+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:57:04.891+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:07.223+0000] {tasks.py:379} INFO - Price of 1567982 - ESCOVADEACOMANUAL: 12,98
+[2022-09-26T02:57:07.223+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:10.413+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/interruptor-ilumi-1-tecla-18-45710/
+[2022-09-26T02:57:10.413+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:57:10.413+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:13.608+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/chave-de-dobrar-ferro-38-sao-romao-2-45374/
+[2022-09-26T02:57:13.608+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:57:13.609+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:15.989+0000] {tasks.py:379} INFO - Price of 1569610 - TOMADAEXTERNA: 7,50
+[2022-09-26T02:57:15.990+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:18.584+0000] {tasks.py:379} INFO - Price of 1567970 - REJUNTEFLEXIVEL: 4,99
+[2022-09-26T02:57:18.585+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:20.710+0000] {tasks.py:379} INFO - Price of 1568029 - PREGODEACOCARBONO: 19,11
+[2022-09-26T02:57:20.710+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:22.760+0000] {tasks.py:379} INFO - Price of 1569624 - SOQUETEANTIVIBRATORIOPARALAMPADA: 4,10
+[2022-09-26T02:57:22.761+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:26.065+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/caixa-sifonada-krona-plastubus-150x50-mm-18-45749/
+[2022-09-26T02:57:26.065+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:57:26.066+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:28.071+0000] {tasks.py:379} INFO - Price of 1567956 - AREIAGROSSALAVADA: 4,00
+[2022-09-26T02:57:28.072+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:31.179+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/solucao-limpadora-amanco-1000ml-46720/
+[2022-09-26T02:57:31.180+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:57:31.180+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:33.288+0000] {tasks.py:379} INFO - Price of 1568075 - TOMADADESOBREPOR: 16,42
+[2022-09-26T02:57:33.288+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:35.713+0000] {tasks.py:379} INFO - Price of 1568042 - ESMALTESINTETICO: 69,90
+[2022-09-26T02:57:35.713+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:37.943+0000] {tasks.py:379} INFO - Price of 1568025 - NIPEL: 1,75
+[2022-09-26T02:57:37.944+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:40.032+0000] {tasks.py:379} INFO - Price of 1568085 - CURVADEPVCPARAESGOTOPREDIAL90GRAUS: 39,99
+[2022-09-26T02:57:40.033+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:42.582+0000] {tasks.py:379} INFO - Price of 1572068 - TUBOPARACISTERNAEFOSSA: 89,90
+[2022-09-26T02:57:42.582+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:45.902+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/graxa-500g-dimec-17-45895/
+[2022-09-26T02:57:45.903+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:57:45.903+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:47.958+0000] {tasks.py:379} INFO - Price of 1567966 - CADEADO: 25,00
+[2022-09-26T02:57:47.958+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:49.990+0000] {tasks.py:379} INFO - Price of 1569609 - INTERRUPTOR: 13,99
+[2022-09-26T02:57:49.990+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:52.505+0000] {tasks.py:379} INFO - Price of 1568072 - DISCODEDESBASTE: 12,00
+[2022-09-26T02:57:52.506+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:55.795+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/grelha-inox-10x10-rotativa-2-45525/
+[2022-09-26T02:57:55.796+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:57:55.796+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:57:59.174+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/parafuso-autoperfurante-philips-42-x-19mm-46358/
+[2022-09-26T02:57:59.174+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:57:59.175+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:01.156+0000] {tasks.py:379} INFO - Price of 1568077 - TUBODEPVCPARAESGOTO: 66,00
+[2022-09-26T02:58:01.157+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:04.280+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/selador-acrilico-para-parede-reinil-18lt-52851/
+[2022-09-26T02:58:04.280+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:58:04.281+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:06.298+0000] {tasks.py:379} INFO - Price of 1567959 - TUBODEDESPEJOPARAVALVULA: 5,53
+[2022-09-26T02:58:06.299+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:09.377+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/caixa-sifonada-amanco-100x50-mm-2-45752/
+[2022-09-26T02:58:09.377+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:58:09.378+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:11.224+0000] {tasks.py:379} INFO - Price of 1568027 - FIOPARALELO: 5,46
+[2022-09-26T02:58:11.225+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:14.533+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/jogo-de-alizar-simples-5cm-14-45719/
+[2022-09-26T02:58:14.534+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:58:14.534+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:17.453+0000] {tasks.py:379} INFO - Price of 1568084 - TIJOLOCERAMICOFURADO: 660,00
+[2022-09-26T02:58:17.453+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:19.584+0000] {tasks.py:379} INFO - Price of 1567976 - ADESIVOPARATUBODEPVC: 46,16
+[2022-09-26T02:58:19.585+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:21.873+0000] {tasks.py:379} INFO - Price of 1567953 - AREIALAVADA: 3,95
+[2022-09-26T02:58:21.873+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:24.489+0000] {tasks.py:379} INFO - Price of 1568012 - ESPUDEPARAVASOSANITARIO: 2,28
+[2022-09-26T02:58:24.489+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:26.654+0000] {tasks.py:379} INFO - Price of 1567993 - TOMADADEEMBUTIR: 15,00
+[2022-09-26T02:58:26.656+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:28.869+0000] {tasks.py:379} INFO - Price of 1569625 - PREGOCOMCABECAEMACOGALVANIZADO: 20,04
+[2022-09-26T02:58:28.870+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:32.186+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/cap-soldavel-classe-a-032mm-3-45550/
+[2022-09-26T02:58:32.186+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:58:32.187+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:34.664+0000] {tasks.py:379} INFO - Price of 1567979 - ANELDEVEDACAOVEDANELPARAVASOSANITARIO: 10,00
+[2022-09-26T02:58:34.665+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:36.726+0000] {tasks.py:379} INFO - Price of 1568090 - CONCTORDEPORCELANA: 4,28
+[2022-09-26T02:58:36.726+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:39.926+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/lampada-fluorecente-20w-osram-2-45892/
+[2022-09-26T02:58:39.927+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:58:39.927+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:42.207+0000] {tasks.py:379} INFO - Price of 1568083 - PREGOCOMCABECA: 19,99
+[2022-09-26T02:58:42.208+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:44.622+0000] {tasks.py:379} INFO - Price of 1568073 - TUBODEPVCPARAESGOTO: 70,01
+[2022-09-26T02:58:44.622+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:47.117+0000] {tasks.py:379} INFO - Price of 1568038 - TINTAESMALTESINTETICO: 79,90
+[2022-09-26T02:58:47.118+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:49.269+0000] {tasks.py:379} INFO - Price of 1568051 - CAIXASIFONADADEPVC: 41,80
+[2022-09-26T02:58:49.270+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:51.285+0000] {tasks.py:379} INFO - Price of 1567967 - BUCHADENYLON: 0,50
+[2022-09-26T02:58:51.285+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:53.436+0000] {tasks.py:379} INFO - Price of 1568057 - ADAPTADOREMPVCSOLDAVEL: 2,00
+[2022-09-26T02:58:53.437+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:56.695+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/po-de-brita-46729/
+[2022-09-26T02:58:56.696+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:58:56.696+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:58:59.232+0000] {tasks.py:379} INFO - Price of 1568053 - CAIXADAGUADEPOLIETILENO: 199,92
+[2022-09-26T02:58:59.232+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:01.373+0000] {tasks.py:379} INFO - Price of 1568015 - DISJUNTORDINTRIPOLAR: 58,60
+[2022-09-26T02:59:01.374+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:03.582+0000] {tasks.py:379} INFO - Price of 1568080 - CURVADEPVCPARAESGOTOPREDIAL90GRAUS: 23,99
+[2022-09-26T02:59:03.583+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:05.564+0000] {tasks.py:379} INFO - Price of 1568049 - CONECTORPARAREDE: 1,00
+[2022-09-26T02:59:05.564+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:07.732+0000] {tasks.py:379} INFO - Price of 1568010 - PORCADEACOSEXTAVADA: 0,25
+[2022-09-26T02:59:07.732+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:09.788+0000] {tasks.py:379} INFO - Price of 1568023 - ABRACADEIRA: 1,04
+[2022-09-26T02:59:09.788+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:12.042+0000] {tasks.py:379} INFO - Price of 1567963 - TIJOLOCERAMICOFURADO: 850,00
+[2022-09-26T02:59:12.045+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:14.256+0000] {tasks.py:379} INFO - Price of 1568017 - MASSAPLASTICA: 13,00
+[2022-09-26T02:59:14.257+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:17.612+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/cola-branca-1-kg-prodopas-46498/
+[2022-09-26T02:59:17.613+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:59:17.613+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:20.758+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/boia-torneira-34-46245/
+[2022-09-26T02:59:20.758+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:59:20.759+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:22.944+0000] {tasks.py:379} INFO - Price of 1568082 - ADESIVOPLASTICO: 57,00
+[2022-09-26T02:59:22.945+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:25.077+0000] {tasks.py:379} INFO - Price of 1569607 - QUADRODEDISTRIBUICAO: 62,81
+[2022-09-26T02:59:25.078+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:29.063+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/sifao-herc-universal-46862/
+[2022-09-26T02:59:29.064+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:59:29.064+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:31.771+0000] {tasks.py:379} INFO - Price of 1568040 - ESMALTESINTETICO: 69,90
+[2022-09-26T02:59:31.771+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:35.053+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/textura-acril-qualquer-cor-20-kg-45546/
+[2022-09-26T02:59:35.053+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:59:35.054+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:37.620+0000] {tasks.py:379} INFO - Price of 1568014 - FITAVEDAROSCA: 7,56
+[2022-09-26T02:59:37.621+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:39.691+0000] {tasks.py:379} INFO - Price of 1568022 - CADEADO: 24,99
+[2022-09-26T02:59:39.691+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:43.012+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/textura-ipanema-qualquer-cor-20kg-46019/
+[2022-09-26T02:59:43.012+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:59:43.013+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:45.524+0000] {tasks.py:379} INFO - Price of 1567974 - LUVAEMPVCSOLDAVEL: 1,50
+[2022-09-26T02:59:45.529+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:48.662+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/cadeado-gold-50-mm-175-55604/
+[2022-09-26T02:59:48.662+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:59:48.663+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:51.981+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/cal-para-pintura-itau-8-kg-15-45747/
+[2022-09-26T02:59:51.982+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T02:59:51.982+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:54.141+0000] {tasks.py:379} INFO - Price of 1567958 - TELHACERAMICAAMERICANA: 2,32
+[2022-09-26T02:59:54.141+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:56.515+0000] {tasks.py:379} INFO - Price of 1567955 - AREIAFINALAVADA: 3,70
+[2022-09-26T02:59:56.516+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T02:59:58.917+0000] {tasks.py:379} INFO - Price of 1568055 - PLUGDEPVC: 1,02
+[2022-09-26T02:59:58.918+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:01.122+0000] {tasks.py:379} INFO - Price of 1568071 - ROLODEESPUMADEPOLIESTERPARAPINTURA: 15,00
+[2022-09-26T03:00:01.123+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:05.310+0000] {tasks.py:379} INFO - Price of 1568037 - PREGOCOMCABECA: 3,50
+[2022-09-26T03:00:05.311+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:09.595+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/concregrama-50x50x10-cm-45029/
+[2022-09-26T03:00:09.595+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T03:00:09.596+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:13.694+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/caixa-sifonada-krona-100x50-mm-2-45750/
+[2022-09-26T03:00:13.695+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T03:00:13.696+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:17.502+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/grelha-inox-15x15-rotativa-2-46030/
+[2022-09-26T03:00:17.503+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T03:00:17.504+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:21.969+0000] {tasks.py:379} INFO - Price of 1569608 - INTERRUPTOR: 9,99
+[2022-09-26T03:00:21.970+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:26.531+0000] {tasks.py:379} INFO - Price of 1569602 - DISJUNTORUNIPOLAR: 12,98
+[2022-09-26T03:00:26.545+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:30.398+0000] {tasks.py:379} INFO - Price of 1567968 - LUVADEREDUCAOSOLDAVEL: 2,50
+[2022-09-26T03:00:30.399+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:33.530+0000] {tasks.py:379} INFO - Price of 1568050 - INTERRUPTOREEMBUTIR: 7,20
+[2022-09-26T03:00:33.531+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:36.285+0000] {tasks.py:379} INFO - Price of 1568078 - TOMADADESOBREPOR: 11,48
+[2022-09-26T03:00:36.285+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:38.762+0000] {tasks.py:379} INFO - Price of 1569604 - LUVADECOURO: 10,30
+[2022-09-26T03:00:38.763+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:43.554+0000] {tasks.py:379} INFO - Price of 1567957 - LUMINARIADEEMERGENCIADELED: 27,00
+[2022-09-26T03:00:43.554+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:46.062+0000] {tasks.py:379} INFO - Price of 1568044 - FECHADURAPARAPORTADEBANHEIRO: 50,00
+[2022-09-26T03:00:46.063+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:49.392+0000] {tasks.py:379} INFO - Price of 1568041 - FITAVEDAROSCA: 3,52
+[2022-09-26T03:00:49.393+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:51.581+0000] {tasks.py:379} INFO - Price of 1569630 - REATORPARALAMPADAFLUORESCENTE: 26,00
+[2022-09-26T03:00:51.582+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:53.776+0000] {tasks.py:379} INFO - Price of 1568039 - FECHADURAEMINOX: 68,48
+[2022-09-26T03:00:53.777+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:55.934+0000] {tasks.py:379} INFO - Price of 1567965 - CADEADODELATAOMACICO: 16,90
+[2022-09-26T03:00:55.935+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:00:59.227+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/arame-preto-recozido-n18-1kg-19-45593/
+[2022-09-26T03:00:59.228+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T03:00:59.228+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:01:02.337+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/interruptor-externo-1-tecla-25-45711/
+[2022-09-26T03:01:02.337+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T03:01:02.338+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:01:05.462+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/broca-aco-rapido-12mm-19-55928/
+[2022-09-26T03:01:05.463+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T03:01:05.464+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:01:08.893+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/cal-itau-hidratado-20-kg-14-45748/
+[2022-09-26T03:01:08.893+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T03:01:08.893+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:01:11.311+0000] {tasks.py:379} INFO - Price of 1568081 - VALVULADEPVCPARAPIA: 6,00
+[2022-09-26T03:01:11.312+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:01:14.576+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/cola-branca-500g-soudal-46497/
+[2022-09-26T03:01:14.577+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T03:01:14.577+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:01:16.768+0000] {tasks.py:379} INFO - Price of 1568036 - PREGOCOMCABECA: 19,11
+[2022-09-26T03:01:16.769+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:01:19.056+0000] {tasks.py:379} INFO - Price of 1568054 - INTERRUPTORDEEMBUTIR: 12,99
+[2022-09-26T03:01:19.056+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:01:22.113+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/roldana-de-2-metal-45023/
+[2022-09-26T03:01:22.114+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T03:01:22.114+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:01:25.461+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/lixa-ferro-grao-100-2-46054/
+[2022-09-26T03:01:25.462+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T03:01:25.462+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:01:27.387+0000] {tasks.py:379} INFO - Price of 1568045 - PREGOCOMCABECA: 23,00
+[2022-09-26T03:01:27.387+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:01:30.486+0000] {tasks.py:382} INFO - Skipping element errors to: https://redemercado.com.br/comercial-terra-prometida/produto/canaleta-de-cimento-meio-09x19x19cm-45616/
+[2022-09-26T03:01:30.487+0000] {tasks.py:383} INFO - Error: Message: Unable to locate element: .h3.d-block.preco .preco-final
+Stacktrace:
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:186:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:398:5
+element.find/</<@chrome://remote/content/marionette/element.js:300:16
+
+[2022-09-26T03:01:30.488+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:01:33.004+0000] {tasks.py:379} INFO - Price of 1567952 - BRITA: 4,00
+[2022-09-26T03:01:33.005+0000] {tasks.py:318} INFO - Printing information
+[2022-09-26T03:01:33.061+0000] {tasks.py:406} INFO - Saved screenshots and prices
+[2022-09-26T03:01:33.068+0000] {tasks.py:240} INFO - Test not passed
+[2022-09-26T03:01:33.068+0000] {tasks.py:242} INFO - Difference of 35 prices
+[2022-09-26T03:01:33.099+0000] {tasks.py:263} INFO - Requested prices: 115
+[2022-09-26T03:01:33.100+0000] {tasks.py:264} INFO - Scraped prices: 80
+[2022-09-26T03:01:33.100+0000] {tasks.py:265} INFO - Day of the scraping: 26/09/2022
+[2022-09-26T03:01:33.150+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-09-26T03:01:33.211+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=rede_mercado, task_id=colector, execution_date=20220801T000000, start_date=20220926T025538, end_date=20220926T030133
+[2022-09-26T03:01:33.286+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-09-26T03:01:33.333+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,46 @@
+[2022-10-03T12:46:52.149+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: casa_da_limpeza.colector scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-03T12:46:52.171+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: casa_da_limpeza.colector scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-03T12:46:52.172+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-03T12:46:52.174+0000] {taskinstance.py:1363} INFO - Starting attempt 2 of 2
+[2022-10-03T12:46:52.174+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-03T12:46:52.194+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-09-01 00:00:00+00:00
+[2022-10-03T12:46:52.203+0000] {standard_task_runner.py:54} INFO - Started process 825 to run task
+[2022-10-03T12:46:52.207+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'casa_da_limpeza', 'colector', 'scheduled__2022-09-01T00:00:00+00:00', '--job-id', '383', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpa2_hrcdn']
+[2022-10-03T12:46:52.208+0000] {standard_task_runner.py:83} INFO - Job 383: Subtask colector
+[2022-10-03T12:46:52.209+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-10-03T12:46:52.905+0000] {task_command.py:384} INFO - Running <TaskInstance: casa_da_limpeza.colector scheduled__2022-09-01T00:00:00+00:00 [running]> on host 9a36b0424536
+[2022-10-03T12:46:53.015+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=casa_da_limpeza
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-01T00:00:00+00:00
+[2022-10-03T12:46:53.017+0000] {tasks.py:39} INFO - Defining DEC to export information
+[2022-10-03T12:46:53.024+0000] {tasks.py:353} INFO - Reading prep dataframe
+[2022-10-03T12:46:53.040+0000] {tasks.py:146} INFO - Instantiating the Browser with the requested settings
+[2022-10-03T12:46:57.145+0000] {tasks.py:160} INFO - Browser configured
+[2022-10-03T12:46:57.147+0000] {tasks.py:283} INFO - Removing nan URL values
+[2022-10-03T12:46:57.153+0000] {tasks.py:284} INFO - Requested prices before: 5
+[2022-10-03T12:46:57.171+0000] {tasks.py:289} INFO - Requested prices after: 5
+[2022-10-03T12:47:00.976+0000] {tasks.py:383} INFO - Price of 1574750 - DISPENSERPARAPAPELTOALHA: R$ 41,90
+[2022-10-03T12:47:00.977+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:47:02.917+0000] {tasks.py:383} INFO - Price of 1574748 - DISPENSERPARAPAPELHIGIENICO: R$ 41,90
+[2022-10-03T12:47:02.918+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:47:05.013+0000] {tasks.py:383} INFO - Price of 1574747 - DESINFETANTEABASEDEQUATERNARIODEAMONIO: R$ 28,50
+[2022-10-03T12:47:05.013+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:47:08.765+0000] {tasks.py:383} INFO - Price of 1574749 - DISPENSERPARASABONETELIQUIDO: R$ 36,00
+[2022-10-03T12:47:08.766+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:47:11.036+0000] {tasks.py:383} INFO - Price of 1574746 - CERAPARAPISOSDEMADEIRA: R$ 97,00
+[2022-10-03T12:47:11.039+0000] {tasks.py:322} INFO - Printing information
+[2022-10-03T12:47:11.275+0000] {tasks.py:410} INFO - Saved screenshots and prices
+[2022-10-03T12:47:11.276+0000] {tasks.py:241} INFO - Test passed
+[2022-10-03T12:47:11.281+0000] {tasks.py:267} INFO - Requested prices: 5
+[2022-10-03T12:47:11.282+0000] {tasks.py:268} INFO - Scraped prices: 5
+[2022-10-03T12:47:11.283+0000] {tasks.py:269} INFO - Day of the scraping: 03/10/2022
+[2022-10-03T12:47:11.304+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-10-03T12:47:11.342+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=casa_da_limpeza, task_id=colector, execution_date=20220901T000000, start_date=20221003T124652, end_date=20221003T124711
+[2022-10-03T12:47:11.442+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-10-03T12:47:11.533+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

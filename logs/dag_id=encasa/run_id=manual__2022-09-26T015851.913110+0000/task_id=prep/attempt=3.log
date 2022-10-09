@@ -1,0 +1,29 @@
+[2022-09-27T14:20:55.671+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: encasa.prep manual__2022-09-26T01:58:51.913110+00:00 [queued]>
+[2022-09-27T14:20:55.683+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: encasa.prep manual__2022-09-26T01:58:51.913110+00:00 [queued]>
+[2022-09-27T14:20:55.684+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-27T14:20:55.684+0000] {taskinstance.py:1363} INFO - Starting attempt 3 of 3
+[2022-09-27T14:20:55.685+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-27T14:20:55.697+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): prep> on 2022-09-26 01:58:51.913110+00:00
+[2022-09-27T14:20:55.702+0000] {standard_task_runner.py:54} INFO - Started process 1907 to run task
+[2022-09-27T14:20:55.704+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'encasa', 'prep', 'manual__2022-09-26T01:58:51.913110+00:00', '--job-id', '282', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpeo838b5k']
+[2022-09-27T14:20:55.704+0000] {standard_task_runner.py:83} INFO - Job 282: Subtask prep
+[2022-09-27T14:20:55.705+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-09-27T14:20:56.073+0000] {task_command.py:384} INFO - Running <TaskInstance: encasa.prep manual__2022-09-26T01:58:51.913110+00:00 [running]> on host 230d0404a0b6
+[2022-09-27T14:20:56.135+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=encasa
+AIRFLOW_CTX_TASK_ID=prep
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-26T01:58:51.913110+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-26T01:58:51.913110+00:00
+[2022-09-27T14:20:56.136+0000] {tasks.py:112} INFO - Reading the last request file for day 27/09/2022
+[2022-09-27T14:20:56.476+0000] {tasks.py:91} INFO - Cleaning the column NM_INSUMO
+[2022-09-27T14:20:56.715+0000] {tasks.py:131} INFO - Filtering for BP 93148 and period ['M20']
+[2022-09-27T14:20:56.732+0000] {tasks.py:42} INFO - Defining DEC to export information
+[2022-09-27T14:20:56.748+0000] {tasks.py:139} INFO - Saved prep dataframe in ./data_output/ENCASA/coleta_2022/coleta_setembro/coleta_3_dec/saida_2022_09_27
+[2022-09-27T14:20:56.751+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-09-27T14:20:56.761+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=encasa, task_id=prep, execution_date=20220926T015851, start_date=20220927T142055, end_date=20220927T142056
+[2022-09-27T14:20:56.799+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-09-27T14:20:56.831+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,165 @@
+[2022-10-09T23:23:56.169+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: cemaco.colector scheduled__2022-08-11T00:00:00+00:00 [queued]>
+[2022-10-09T23:23:56.177+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: cemaco.colector scheduled__2022-08-11T00:00:00+00:00 [queued]>
+[2022-10-09T23:23:56.177+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-09T23:23:56.178+0000] {taskinstance.py:1363} INFO - Starting attempt 6 of 6
+[2022-10-09T23:23:56.178+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-09T23:23:56.191+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-08-11 00:00:00+00:00
+[2022-10-09T23:23:56.195+0000] {standard_task_runner.py:54} INFO - Started process 805 to run task
+[2022-10-09T23:23:56.198+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'cemaco', 'colector', 'scheduled__2022-08-11T00:00:00+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmprph38fof']
+[2022-10-09T23:23:56.198+0000] {standard_task_runner.py:83} INFO - Job 17: Subtask colector
+[2022-10-09T23:23:56.199+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-10-09T23:23:56.470+0000] {task_command.py:384} INFO - Running <TaskInstance: cemaco.colector scheduled__2022-08-11T00:00:00+00:00 [running]> on host 7dcbfa2899a4
+[2022-10-09T23:23:56.526+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cemaco
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-11T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=6
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-11T00:00:00+00:00
+[2022-10-09T23:23:56.530+0000] {tasks.py:241} INFO - Reading prep dataframe
+[2022-10-09T23:23:56.535+0000] {tasks.py:122} INFO - Instantiating the Browser with the requested settings
+[2022-10-09T23:23:58.916+0000] {tasks.py:126} INFO - Browser configured
+[2022-10-09T23:23:58.917+0000] {tasks.py:181} INFO - Removing nan URL values
+[2022-10-09T23:23:58.918+0000] {tasks.py:182} INFO - Requested prices before: 35
+[2022-10-09T23:23:58.922+0000] {tasks.py:187} INFO - Requested prices after: 35
+[2022-10-09T23:24:02.739+0000] {tasks.py:261} INFO - Price of 91792 - SELANTEELASTICOABASEDEPOLIURETANO: R$ 44,90
+[2022-10-09T23:24:02.740+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:24:02.740+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:24:06.987+0000] {tasks.py:261} INFO - Price of 91792 - JOELHO90DEPVCPARAESGOTO: R$ 1,99
+[2022-10-09T23:24:06.987+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:24:06.988+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:24:11.618+0000] {tasks.py:261} INFO - Price of 91792 - BUCHADEREDUCAO: R$ 2,89
+[2022-10-09T23:24:11.619+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:24:11.619+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:24:15.848+0000] {tasks.py:261} INFO - Price of 91792 - FIODECOBREISOLADOFLEXIVELPARACONDUCAOELETRICA: R$ 259,00
+[2022-10-09T23:24:15.849+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:24:15.849+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:24:19.589+0000] {tasks.py:264} INFO - Skipping element errors to: https://cemaco.com.br/produto/1460-fio-corfio-flexivel-r4-mm-750v-verde-100ml
+[2022-10-09T23:24:19.589+0000] {tasks.py:265} INFO - Error: Message: Unable to locate element: .price.margint10
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:404:5
+element.find/</<@chrome://remote/content/marionette/element.js:291:16
+
+[2022-10-09T23:24:19.589+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:24:19.590+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:24:25.119+0000] {tasks.py:261} INFO - Price of 91792 - ADITIVOPLASTIFICANTE: R$ 178,83
+[2022-10-09T23:24:25.120+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:24:25.120+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:24:29.278+0000] {tasks.py:261} INFO - Price of 91792 - CONEXAOJOELHODEPVCPARAESGOTO45GRAUS: R$ 5,32
+[2022-10-09T23:24:29.279+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:24:29.279+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:24:33.535+0000] {tasks.py:261} INFO - Price of 91792 - CONEXAOJOELHODEPVCSOLDAVEL90GRAUS: R$ 5,49
+[2022-10-09T23:24:33.535+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:24:33.536+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:24:37.766+0000] {tasks.py:261} INFO - Price of 91792 - ARGAMASSACOLANTEPARAUSOEXTERNO: R$ 23,90
+[2022-10-09T23:24:37.767+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:24:37.767+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:24:41.960+0000] {tasks.py:261} INFO - Price of 91792 - FECHADURAMACANETA: R$ 72,00
+[2022-10-09T23:24:41.961+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:24:41.961+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:24:46.188+0000] {tasks.py:261} INFO - Price of 91792 - MASSACORRIDAPVA: R$ 49,00
+[2022-10-09T23:24:46.189+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:24:46.189+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:24:50.403+0000] {tasks.py:261} INFO - Price of 91792 - CONEXAOJOELHODEPVCPARAESGOTO45GRAUS: R$ 3,68
+[2022-10-09T23:24:50.403+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:24:50.404+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:24:54.584+0000] {tasks.py:261} INFO - Price of 91792 - CONEXAOJOELHODEPVCSOLDAVELLL90GRAUS: R$ 3,79
+[2022-10-09T23:24:54.584+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:24:54.585+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:24:58.766+0000] {tasks.py:261} INFO - Price of 91792 - CADEADODELATAO: R$ 16,00
+[2022-10-09T23:24:58.767+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:24:58.767+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:25:03.026+0000] {tasks.py:264} INFO - Skipping element errors to: https://cemaco.com.br/produto/16996-curva-longa-amanco-esgoto-90-100-mm
+[2022-10-09T23:25:03.026+0000] {tasks.py:265} INFO - Error: Message: Unable to locate element: .price.margint10
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:404:5
+element.find/</<@chrome://remote/content/marionette/element.js:291:16
+
+[2022-10-09T23:25:03.026+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:25:03.027+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:25:07.396+0000] {tasks.py:261} INFO - Price of 91792 - JANELADEALUMINIO: R$ 279,90
+[2022-10-09T23:25:07.397+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:25:07.397+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:25:11.541+0000] {tasks.py:264} INFO - Skipping element errors to: https://cemaco.com.br/produto/31375-caixa-de-gordura-amanco-para-cozinha-com-cesto-e-tampa-dn-300
+[2022-10-09T23:25:11.541+0000] {tasks.py:265} INFO - Error: Message: Unable to locate element: .price.margint10
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:404:5
+element.find/</<@chrome://remote/content/marionette/element.js:291:16
+
+[2022-10-09T23:25:11.542+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:25:11.542+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:25:15.701+0000] {tasks.py:261} INFO - Price of 91792 - ADAPTADORFLANGECOMANELAUTOAJUSTAVEL: R$ 34,09
+[2022-10-09T23:25:15.701+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:25:15.702+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:25:19.946+0000] {tasks.py:261} INFO - Price of 91792 - SABONETEIRAOVALEMMETAL: R$ 19,00
+[2022-10-09T23:25:19.947+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:25:19.947+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:25:24.101+0000] {tasks.py:261} INFO - Price of 91792 - BASEPARAVALVULADEDESCARGA: R$ 172,00
+[2022-10-09T23:25:24.102+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:25:24.102+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:25:28.279+0000] {tasks.py:261} INFO - Price of 91792 - TUBODEPVCPARAESGOTO: R$ 112,05
+[2022-10-09T23:25:28.279+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:25:28.280+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:25:32.401+0000] {tasks.py:261} INFO - Price of 91792 - DISJUNTOR: R$ 11,90
+[2022-10-09T23:25:32.402+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:25:32.402+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:25:36.827+0000] {tasks.py:261} INFO - Price of 91792 - TUBODEPVCPARAAGUASOLDAVEL: R$ 26,90
+[2022-10-09T23:25:36.828+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:25:36.828+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:25:40.989+0000] {tasks.py:261} INFO - Price of 91792 - TINTAACRILICASEMIBRILHO: R$ 399,90
+[2022-10-09T23:25:40.989+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:25:40.989+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:25:45.200+0000] {tasks.py:261} INFO - Price of 91792 - ACABAMENTOPARAREGISTROBASEPERTUTTI: R$ 38,90
+[2022-10-09T23:25:45.201+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:25:45.201+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:25:49.395+0000] {tasks.py:261} INFO - Price of 91792 - PARAFUSOPARABACIAOULAVATORIO: R$ 16,00
+[2022-10-09T23:25:49.395+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:25:49.396+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:25:53.550+0000] {tasks.py:261} INFO - Price of 91792 - CONEXAOJOELHODEPVCSOLDAVELLL45GRAUS: R$ 34,13
+[2022-10-09T23:25:53.551+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:25:53.551+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:25:57.880+0000] {tasks.py:261} INFO - Price of 91792 - JANELADEALUMINIO: R$ 239,90
+[2022-10-09T23:25:57.880+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:25:57.881+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:26:02.048+0000] {tasks.py:261} INFO - Price of 91792 - ADAPTADORFLANGECOMANELAUTOAJUSTAVEL: R$ 14,57
+[2022-10-09T23:26:02.048+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:26:02.048+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:26:06.260+0000] {tasks.py:261} INFO - Price of 91792 - CURVA45degDEPVCCURTAPARAESGOTO: R$ 47,71
+[2022-10-09T23:26:06.261+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:26:06.261+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:26:10.759+0000] {tasks.py:261} INFO - Price of 91792 - ADAPTADORLR: R$ 2,95
+[2022-10-09T23:26:10.759+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:26:10.760+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:26:14.841+0000] {tasks.py:261} INFO - Price of 91792 - ELETRODUTODEPVCFLEXIVEL: R$ 4,82
+[2022-10-09T23:26:14.841+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:26:14.842+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:26:18.982+0000] {tasks.py:261} INFO - Price of 91792 - ELETRODUTODEPVCFLEXIVEL: R$ 2,81
+[2022-10-09T23:26:18.982+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:26:18.982+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:26:23.112+0000] {tasks.py:261} INFO - Price of 91792 - LUVADEPVC: R$ 2,24
+[2022-10-09T23:26:23.112+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:26:23.113+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:26:27.284+0000] {tasks.py:261} INFO - Price of 91792 - CURVADEPVC90PARAESGOTO: R$ 15,12
+[2022-10-09T23:26:27.285+0000] {tasks.py:211} INFO - Printing information
+[2022-10-09T23:26:27.285+0000] {tasks.py:199} INFO - Scrolling pages on 1 keys
+[2022-10-09T23:26:28.850+0000] {tasks.py:277} INFO - Saved screenshots and prices
+[2022-10-09T23:26:28.851+0000] {tasks.py:144} INFO - Test not passed
+[2022-10-09T23:26:28.851+0000] {tasks.py:146} INFO - Difference of 3 prices
+[2022-10-09T23:26:28.854+0000] {tasks.py:163} INFO - Requested prices: 35
+[2022-10-09T23:26:28.854+0000] {tasks.py:164} INFO - Scraped prices: 32
+[2022-10-09T23:26:28.854+0000] {tasks.py:165} INFO - Day of the scraping: 09/10/2022
+[2022-10-09T23:26:28.870+0000] {warnings.py:110} WARNING - /opt/***/dags/tasks.py:172: FutureWarning: As the xlwt package is no longer maintained, the xlwt engine will be removed in a future version of pandas. This is the only engine in pandas that supports writing in the xls format. Install openpyxl and write to an xlsx file instead. You can set the option io.excel.xls.writer to 'xlwt' to silence this warning. While this option is deprecated and will also raise a warning, it can be globally set and the warning suppressed.
+  result_colector.to_excel(f"{export}", index=False)
+
+[2022-10-09T23:26:28.899+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-10-09T23:26:28.910+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=cemaco, task_id=colector, execution_date=20220811T000000, start_date=20221009T232356, end_date=20221009T232628
+[2022-10-09T23:26:28.962+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-10-09T23:26:28.977+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

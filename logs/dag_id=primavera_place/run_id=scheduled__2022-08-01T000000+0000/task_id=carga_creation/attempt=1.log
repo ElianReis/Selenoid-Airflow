@@ -1,0 +1,44 @@
+[2022-09-26T03:01:17.559+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: primavera_place.carga_creation scheduled__2022-08-01T00:00:00+00:00 [queued]>
+[2022-09-26T03:01:17.594+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: primavera_place.carga_creation scheduled__2022-08-01T00:00:00+00:00 [queued]>
+[2022-09-26T03:01:17.595+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T03:01:17.595+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-09-26T03:01:17.595+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T03:01:17.624+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): carga_creation> on 2022-08-01 00:00:00+00:00
+[2022-09-26T03:01:17.640+0000] {standard_task_runner.py:54} INFO - Started process 3107 to run task
+[2022-09-26T03:01:17.643+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'primavera_place', 'carga_creation', 'scheduled__2022-08-01T00:00:00+00:00', '--job-id', '57', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpaxjmvzf1']
+[2022-09-26T03:01:17.644+0000] {standard_task_runner.py:83} INFO - Job 57: Subtask carga_creation
+[2022-09-26T03:01:17.648+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-09-26T03:01:18.521+0000] {task_command.py:384} INFO - Running <TaskInstance: primavera_place.carga_creation scheduled__2022-08-01T00:00:00+00:00 [running]> on host 8600278d5a66
+[2022-09-26T03:01:18.605+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=primavera_place
+AIRFLOW_CTX_TASK_ID=carga_creation
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-01T00:00:00+00:00
+[2022-09-26T03:01:18.606+0000] {tasks.py:526} INFO - Reading results from collect dataframe
+[2022-09-26T03:01:18.606+0000] {tasks.py:43} INFO - Defining DEC to export information
+[2022-09-26T03:01:18.633+0000] {tasks.py:532} INFO - Renaming columns
+[2022-09-26T03:01:18.634+0000] {tasks.py:535} INFO - Creating column with print information
+[2022-09-26T03:01:18.638+0000] {tasks.py:546} INFO - Fill nan on dataset
+[2022-09-26T03:01:18.641+0000] {tasks.py:549} INFO - Adapting price to the Carga file
+[2022-09-26T03:01:18.644+0000] {tasks.py:449} INFO - Carga being prepared for expected data: 30/09/2022
+[2022-09-26T03:01:18.645+0000] {tasks.py:555} INFO - Filling null values
+[2022-09-26T03:01:18.645+0000] {tasks.py:483} INFO - Naming the price null values
+[2022-09-26T03:01:18.647+0000] {tasks.py:486} INFO - Fill Sinonimous column
+[2022-09-26T03:01:18.649+0000] {tasks.py:493} INFO - Creating a justification for null prices
+[2022-09-26T03:01:18.650+0000] {tasks.py:500} INFO - Fill URL column
+[2022-09-26T03:01:18.650+0000] {tasks.py:507} INFO - Fill date column
+[2022-09-26T03:01:18.651+0000] {tasks.py:558} INFO - Fill regions column
+[2022-09-26T03:01:18.652+0000] {tasks.py:564} INFO - Reordering column
+[2022-09-26T03:01:18.652+0000] {tasks.py:566} INFO - Finishing the process
+[2022-09-26T03:01:18.653+0000] {tasks.py:567} INFO - Total prices: 118
+[2022-09-26T03:01:18.665+0000] {warnings.py:110} WARNING - /opt/***/dags/tasks.py:577: FutureWarning: As the xlwt package is no longer maintained, the xlwt engine will be removed in a future version of pandas. This is the only engine in pandas that supports writing in the xls format. Install openpyxl and write to an xlsx file instead. You can set the option io.excel.xls.writer to 'xlwt' to silence this warning. While this option is deprecated and will also raise a warning, it can be globally set and the warning suppressed.
+  ).to_excel(f"{EXPORT}", index=False)
+
+[2022-09-26T03:01:19.924+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-09-26T03:01:19.935+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=primavera_place, task_id=carga_creation, execution_date=20220801T000000, start_date=20220926T030117, end_date=20220926T030119
+[2022-09-26T03:01:19.995+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-09-26T03:01:20.016+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

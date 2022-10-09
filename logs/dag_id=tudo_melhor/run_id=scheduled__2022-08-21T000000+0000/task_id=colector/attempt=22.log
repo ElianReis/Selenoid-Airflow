@@ -1,0 +1,56 @@
+[2022-09-26T15:39:24.982+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tudo_melhor.colector scheduled__2022-08-21T00:00:00+00:00 [queued]>
+[2022-09-26T15:39:24.990+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tudo_melhor.colector scheduled__2022-08-21T00:00:00+00:00 [queued]>
+[2022-09-26T15:39:24.991+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T15:39:24.991+0000] {taskinstance.py:1363} INFO - Starting attempt 22 of 22
+[2022-09-26T15:39:24.991+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T15:39:25.003+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-08-21 00:00:00+00:00
+[2022-09-26T15:39:25.007+0000] {standard_task_runner.py:54} INFO - Started process 195 to run task
+[2022-09-26T15:39:25.008+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tudo_melhor', 'colector', 'scheduled__2022-08-21T00:00:00+00:00', '--job-id', '240', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmphx330a1f']
+[2022-09-26T15:39:25.009+0000] {standard_task_runner.py:83} INFO - Job 240: Subtask colector
+[2022-09-26T15:39:25.009+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-09-26T15:39:25.938+0000] {task_command.py:384} INFO - Running <TaskInstance: tudo_melhor.colector scheduled__2022-08-21T00:00:00+00:00 [running]> on host e7ac4a7cb8dd
+[2022-09-26T15:39:25.999+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tudo_melhor
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=22
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-21T00:00:00+00:00
+[2022-09-26T15:39:26.004+0000] {tasks.py:42} INFO - Defining DEC to export information
+[2022-09-26T15:39:26.011+0000] {tasks.py:358} INFO - Reading prep dataframe
+[2022-09-26T15:39:26.091+0000] {tasks.py:150} INFO - Instantiating the Browser with the requested settings
+[2022-09-26T15:39:26.093+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/tasks.py", line 360, in colector
+    browser = config_browser(config)
+  File "/opt/airflow/dags/tasks.py", line 164, in config_browser
+    desired_capabilities=capabilities)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 270, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 363, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 426, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 344, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 366, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/request.py", line 79, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/poolmanager.py", line 365, in urlopen
+    conn = self.connection_from_host(u.host, port=u.port, scheme=u.scheme)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/poolmanager.py", line 237, in connection_from_host
+    raise LocationValueError("No host specified.")
+urllib3.exceptions.LocationValueError: No host specified.
+[2022-09-26T15:39:26.108+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=tudo_melhor, task_id=colector, execution_date=20220821T000000, start_date=20220926T153924, end_date=20220926T153926
+[2022-09-26T15:39:26.153+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 240 for task colector (No host specified.; 195)
+[2022-09-26T15:39:26.224+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-09-26T15:39:26.264+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

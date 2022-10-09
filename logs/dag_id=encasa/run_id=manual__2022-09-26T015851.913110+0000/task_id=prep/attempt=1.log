@@ -1,0 +1,31 @@
+[2022-09-26T01:58:52.865+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: encasa.prep manual__2022-09-26T01:58:51.913110+00:00 [queued]>
+[2022-09-26T01:58:52.872+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: encasa.prep manual__2022-09-26T01:58:51.913110+00:00 [queued]>
+[2022-09-26T01:58:52.872+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T01:58:52.873+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-09-26T01:58:52.873+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-26T01:58:52.885+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): prep> on 2022-09-26 01:58:51.913110+00:00
+[2022-09-26T01:58:52.889+0000] {standard_task_runner.py:54} INFO - Started process 70 to run task
+[2022-09-26T01:58:52.890+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'encasa', 'prep', 'manual__2022-09-26T01:58:51.913110+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp00588d7n']
+[2022-09-26T01:58:52.891+0000] {standard_task_runner.py:83} INFO - Job 29: Subtask prep
+[2022-09-26T01:58:52.891+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-09-26T01:58:53.290+0000] {task_command.py:384} INFO - Running <TaskInstance: encasa.prep manual__2022-09-26T01:58:51.913110+00:00 [running]> on host 8600278d5a66
+[2022-09-26T01:58:53.352+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=encasa
+AIRFLOW_CTX_TASK_ID=prep
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-26T01:58:51.913110+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-26T01:58:51.913110+00:00
+[2022-09-26T01:58:53.353+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+TypeError: prep() missing 1 required positional argument: 'output_dir'
+[2022-09-26T01:58:53.361+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=encasa, task_id=prep, execution_date=20220926T015851, start_date=20220926T015852, end_date=20220926T015853
+[2022-09-26T01:58:53.374+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 29 for task prep (prep() missing 1 required positional argument: 'output_dir'; 70)
+[2022-09-26T01:58:53.384+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-09-26T01:58:53.419+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

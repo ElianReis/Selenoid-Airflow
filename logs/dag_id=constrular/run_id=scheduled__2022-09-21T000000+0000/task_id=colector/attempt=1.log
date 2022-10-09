@@ -1,0 +1,412 @@
+[2022-10-04T19:42:39.851+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: constrular.colector scheduled__2022-09-21T00:00:00+00:00 [queued]>
+[2022-10-04T19:42:39.859+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: constrular.colector scheduled__2022-09-21T00:00:00+00:00 [queued]>
+[2022-10-04T19:42:39.860+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-04T19:42:39.860+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-10-04T19:42:39.860+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-04T19:42:39.874+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-09-21 00:00:00+00:00
+[2022-10-04T19:42:39.878+0000] {standard_task_runner.py:54} INFO - Started process 1271 to run task
+[2022-10-04T19:42:39.880+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'constrular', 'colector', 'scheduled__2022-09-21T00:00:00+00:00', '--job-id', '414', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmphfuar_cl']
+[2022-10-04T19:42:39.881+0000] {standard_task_runner.py:83} INFO - Job 414: Subtask colector
+[2022-10-04T19:42:39.882+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-10-04T19:42:40.270+0000] {task_command.py:384} INFO - Running <TaskInstance: constrular.colector scheduled__2022-09-21T00:00:00+00:00 [running]> on host 9a36b0424536
+[2022-10-04T19:42:40.327+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=constrular
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-21T00:00:00+00:00
+[2022-10-04T19:42:40.328+0000] {tasks.py:39} INFO - Defining DEC to export information
+[2022-10-04T19:42:40.333+0000] {tasks.py:353} INFO - Reading prep dataframe
+[2022-10-04T19:42:40.346+0000] {tasks.py:146} INFO - Instantiating the Browser with the requested settings
+[2022-10-04T19:42:49.261+0000] {tasks.py:160} INFO - Browser configured
+[2022-10-04T19:42:49.262+0000] {tasks.py:283} INFO - Removing nan URL values
+[2022-10-04T19:42:49.263+0000] {tasks.py:284} INFO - Requested prices before: 188
+[2022-10-04T19:42:49.275+0000] {tasks.py:289} INFO - Requested prices after: 188
+[2022-10-04T19:42:55.885+0000] {tasks.py:383} INFO - Price of 1578181 - CONEXAOTEDEPVCPARAESGOTOPREDIAL: R$ 13,44
+[2022-10-04T19:42:55.885+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:42:59.405+0000] {tasks.py:383} INFO - Price of 1578105 - ADAPTADORSOLDAVEL: R$ 17,07
+[2022-10-04T19:42:59.405+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:02.739+0000] {tasks.py:383} INFO - Price of 1578115 - CAPDEPVCSOLDAVEL: R$ 9,66
+[2022-10-04T19:43:02.739+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:06.166+0000] {tasks.py:383} INFO - Price of 1578214 - SERRAMARMORE: R$ 312,90
+[2022-10-04T19:43:06.166+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:09.770+0000] {tasks.py:383} INFO - Price of 1578274 - DISJUNTORTRIPOLAR: R$ 67,25
+[2022-10-04T19:43:09.771+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:13.246+0000] {tasks.py:383} INFO - Price of 1578202 - IMPERMEABILIZANTEABASEDERESINAACRILICA: R$ 93,90
+[2022-10-04T19:43:13.247+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:16.977+0000] {tasks.py:383} INFO - Price of 1578082 - LUVASOLDAVEL: R$ 3,90
+[2022-10-04T19:43:16.978+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:20.415+0000] {tasks.py:383} INFO - Price of 1578116 - CAPDEPVCSOLDAVEL: R$ 6,49
+[2022-10-04T19:43:20.416+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:23.824+0000] {tasks.py:383} INFO - Price of 1578083 - LUVASOLDAVEL: R$ 7,65
+[2022-10-04T19:43:23.825+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:27.238+0000] {tasks.py:383} INFO - Price of 1578118 - CURVA90EMPVCPARAESGOTO: R$ 5,90
+[2022-10-04T19:43:27.239+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:30.627+0000] {tasks.py:383} INFO - Price of 1578185 - TEEMPVCPARAESGOTO: R$ 23,90
+[2022-10-04T19:43:30.627+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:34.036+0000] {tasks.py:383} INFO - Price of 1578205 - ADESIVOIMPERMEABILIZANTEPARACONCRETOSEARGAMASSAS: R$ 203,90
+[2022-10-04T19:43:34.037+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:37.401+0000] {tasks.py:383} INFO - Price of 1578131 - JOELHO90EMPVCPARAESGOTO: R$ 6,77
+[2022-10-04T19:43:37.402+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:40.780+0000] {tasks.py:383} INFO - Price of 1578191 - ARANDELABOXDEALUMINIOEACRILICO: R$ 142,90
+[2022-10-04T19:43:40.781+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:44.218+0000] {tasks.py:383} INFO - Price of 1578095 - BOIAPARACAIXADAGUAEMMETAL: R$ 112,90
+[2022-10-04T19:43:44.218+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:47.609+0000] {tasks.py:383} INFO - Price of 1578176 - TEDEREDUCAOEMPVCSOLDAVEL: R$ 8,90
+[2022-10-04T19:43:47.609+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:51.040+0000] {tasks.py:383} INFO - Price of 1578267 - LUVASIMPLESDEPVCPARAESGOTO: R$ 5,40
+[2022-10-04T19:43:51.041+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:54.459+0000] {tasks.py:383} INFO - Price of 1578111 - CONEXAOCAPDEPVCPARAAGUAROSCAVEL: R$ 0,77
+[2022-10-04T19:43:54.460+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:43:57.788+0000] {tasks.py:383} INFO - Price of 1578263 - JUNCAOSIMPLESDEPVCPARAESGOTO: R$ 22,51
+[2022-10-04T19:43:57.789+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:01.155+0000] {tasks.py:383} INFO - Price of 1578264 - LUVADEPVCROSCAVEL: R$ 1,90
+[2022-10-04T19:44:01.156+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:04.556+0000] {tasks.py:383} INFO - Price of 1567046 - JOELHO45DEPVCPARAESGOTO: R$ 1,79
+[2022-10-04T19:44:04.557+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:07.902+0000] {tasks.py:383} INFO - Price of 1578155 - LUVASOLDAVELEMPVC: R$ 3,52
+[2022-10-04T19:44:07.902+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:11.545+0000] {tasks.py:383} INFO - Price of 1578126 - JOELHO45SOLDAVEL: R$ 4,73
+[2022-10-04T19:44:11.546+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:14.873+0000] {tasks.py:383} INFO - Price of 1578169 - TE90SOLDAVEL: R$ 1,58
+[2022-10-04T19:44:14.874+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:18.227+0000] {tasks.py:383} INFO - Price of 1578254 - CURVA90SOLDAVEL: R$ 3,90
+[2022-10-04T19:44:18.227+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:21.423+0000] {tasks.py:383} INFO - Price of 1578154 - LUVASOLDAVELEMPVC: R$ 1,10
+[2022-10-04T19:44:21.424+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:24.787+0000] {tasks.py:383} INFO - Price of 1578159 - LUVASOLDAVELEMPVC: R$ 12,90
+[2022-10-04T19:44:24.787+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:28.172+0000] {tasks.py:383} INFO - Price of 1578201 - TUBODEPVCSOLDAVEL: R$ 49,90
+[2022-10-04T19:44:28.172+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:31.533+0000] {tasks.py:383} INFO - Price of 1567323 - JOELHO90EMPVCSOLDAVEL: R$ 0,90
+[2022-10-04T19:44:31.534+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:35.368+0000] {tasks.py:383} INFO - Price of 1578103 - ADAPTADORSOLDAVEL: R$ 5,90
+[2022-10-04T19:44:35.369+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:38.673+0000] {tasks.py:383} INFO - Price of 1578184 - TEDEREDUCAOEMPVCPARAESGOTO: R$ 4,90
+[2022-10-04T19:44:38.674+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:42.124+0000] {tasks.py:383} INFO - Price of 1578265 - LUVADEPVCROSCAVEL: R$ 1,90
+[2022-10-04T19:44:42.125+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:45.618+0000] {tasks.py:383} INFO - Price of 1578087 - TEDEREDUCAOEMPVCSOLDAVEL: R$ 3,90
+[2022-10-04T19:44:45.618+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:48.957+0000] {tasks.py:383} INFO - Price of 1578140 - JUNCAOSIMPLESDEPVCPARAESGOTO: R$ 11,03
+[2022-10-04T19:44:48.958+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:52.349+0000] {tasks.py:383} INFO - Price of 1578141 - JUNCAOSIMPLESDEPVCPARAESGOTO: R$ 6,93
+[2022-10-04T19:44:52.350+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:55.704+0000] {tasks.py:383} INFO - Price of 1578175 - TE90DEREDUCAOSOLDAVEL: R$ 9,84
+[2022-10-04T19:44:55.705+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:44:59.481+0000] {tasks.py:383} INFO - Price of 1567319 - JOELHO90EMPVCSOLDAVEL: R$ 129,90
+[2022-10-04T19:44:59.482+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:02.932+0000] {tasks.py:383} INFO - Price of 1567348 - CURVA90EMPVCSOLDAVEL: R$ 43,90
+[2022-10-04T19:45:02.933+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:06.410+0000] {tasks.py:383} INFO - Price of 1578090 - BASEPARAVALVULADEDESCARGA: R$ 89,90
+[2022-10-04T19:45:06.410+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:09.866+0000] {tasks.py:383} INFO - Price of 1578093 - REGISTROESFERAMETALICO: R$ 36,90
+[2022-10-04T19:45:09.866+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:13.315+0000] {tasks.py:383} INFO - Price of 1578122 - CURVAEMPVCRIGIDO90: R$ 17,40
+[2022-10-04T19:45:13.316+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:16.709+0000] {tasks.py:383} INFO - Price of 1578163 - NIPEL: R$ 1,48
+[2022-10-04T19:45:16.710+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:20.297+0000] {tasks.py:383} INFO - Price of 1578179 - CONEXAOTEDEPVCPARAESGOTOPREDIAL: R$ 20,29
+[2022-10-04T19:45:20.297+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:23.681+0000] {tasks.py:383} INFO - Price of 1568743 - ADAPTADORPARASIFAO: R$ 4,53
+[2022-10-04T19:45:23.682+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:27.129+0000] {tasks.py:383} INFO - Price of 1578153 - LUVAEMPVCSOLDAVEL: R$ 29,09
+[2022-10-04T19:45:27.130+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:30.600+0000] {tasks.py:383} INFO - Price of 1578188 - UNIAODEPVCRIGIDOSOLDAVEL: R$ 19,79
+[2022-10-04T19:45:30.600+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:34.056+0000] {tasks.py:383} INFO - Price of 1578130 - JOELHO90EMPVCPARAESGOTO: R$ 1,90
+[2022-10-04T19:45:34.056+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:37.400+0000] {tasks.py:383} INFO - Price of 1578194 - TUBODEPVCSOLDAVEL: R$ 3,55
+[2022-10-04T19:45:37.401+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:40.902+0000] {tasks.py:383} INFO - Price of 1578137 - JOELHO90DEPVCSOLDAVEL: R$ 8,65
+[2022-10-04T19:45:40.903+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:44.350+0000] {tasks.py:383} INFO - Price of 1578123 - LIGACAOPARABACIAAJUSTAVEL: R$ 15,90
+[2022-10-04T19:45:44.350+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:47.902+0000] {tasks.py:383} INFO - Price of 1578271 - INTERRUPTORDEEMBUTIR: R$ 28,90
+[2022-10-04T19:45:47.903+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:51.337+0000] {tasks.py:383} INFO - Price of 1578204 - ASSENTOPARAVASOSANITARIOEMPOLIPROPILENO: R$ 248,90
+[2022-10-04T19:45:51.337+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:54.887+0000] {tasks.py:383} INFO - Price of 1567292 - CURVA90EMPVCPARAESGOTO: R$ 23,90
+[2022-10-04T19:45:54.888+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:45:58.200+0000] {tasks.py:383} INFO - Price of 1578196 - TUBODEPVCRIGIDOSOLDAVEL: R$ 13,16
+[2022-10-04T19:45:58.200+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:01.551+0000] {tasks.py:383} INFO - Price of 1578273 - CONJUNTODETOMADA: R$ 10,90
+[2022-10-04T19:46:01.551+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:04.908+0000] {tasks.py:383} INFO - Price of 1578106 - ADAPTADORSOLDAVEL: R$ 42,08
+[2022-10-04T19:46:04.908+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:08.266+0000] {tasks.py:383} INFO - Price of 1578170 - TEDEREDUCAOEMPVCSOLDAVEL: R$ 0,90
+[2022-10-04T19:46:08.267+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:11.635+0000] {tasks.py:383} INFO - Price of 1578197 - TUBODEPVCSOLDAVEL: R$ 10,90
+[2022-10-04T19:46:11.636+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:14.985+0000] {tasks.py:383} INFO - Price of 1567054 - TUBODEPVCPARAAGUASOLDAVEL: R$ 5,86
+[2022-10-04T19:46:14.986+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:18.354+0000] {tasks.py:383} INFO - Price of 1567340 - CURVA90EMPVCPARAESGOTO: R$ 7,75
+[2022-10-04T19:46:18.355+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:21.797+0000] {tasks.py:383} INFO - Price of 1578119 - CURVAEMPVCRIGIDO90: R$ 4,01
+[2022-10-04T19:46:21.798+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:25.484+0000] {tasks.py:383} INFO - Price of 1578200 - TUBODEPVCSOLDAVEL: R$ 21,28
+[2022-10-04T19:46:25.484+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:33.437+0000] {tasks.py:383} INFO - Price of 1578256 - CURVA90: R$ 3,90
+[2022-10-04T19:46:33.437+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:36.905+0000] {tasks.py:383} INFO - Price of 1567349 - CURVA90EMPVCPARAESGOTO: R$ 23,90
+[2022-10-04T19:46:36.906+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:40.249+0000] {tasks.py:383} INFO - Price of 1578104 - ADAPTADORSOLDAVEL: R$ 5,90
+[2022-10-04T19:46:40.249+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:43.750+0000] {tasks.py:383} INFO - Price of 1578114 - CAPDEPVCSOLDAVEL: R$ 1,85
+[2022-10-04T19:46:43.751+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:47.370+0000] {tasks.py:383} INFO - Price of 1578189 - TOMADA: R$ 9,90
+[2022-10-04T19:46:47.371+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:50.864+0000] {tasks.py:383} INFO - Price of 1567048 - JOELHO45DEPVCPARAESGOTO: R$ 10,27
+[2022-10-04T19:46:50.865+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:54.272+0000] {tasks.py:383} INFO - Price of 1567294 - CURVA90EMPVCSOLDAVEL: R$ 0,90
+[2022-10-04T19:46:54.272+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:46:57.799+0000] {tasks.py:383} INFO - Price of 1567295 - JOELHO90EMPVCPARAESGOTO: R$ 6,00
+[2022-10-04T19:46:57.799+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:47:01.630+0000] {tasks.py:383} INFO - Price of 1578099 - ADAPTADORSOLDAVEL: R$ 0,90
+[2022-10-04T19:47:01.630+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:47:05.083+0000] {tasks.py:383} INFO - Price of 1578109 - CAPROSCAVELEMPVC: R$ 8,49
+[2022-10-04T19:47:05.084+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:47:08.481+0000] {tasks.py:383} INFO - Price of 1578133 - JOELHO90DEPVCRIGIDOROSQUEAVEL: R$ 2,52
+[2022-10-04T19:47:08.481+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:47:12.077+0000] {tasks.py:383} INFO - Price of 1578135 - CONEXAODEJOELHO90EMPVC: R$ 1,10
+[2022-10-04T19:47:12.078+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:47:15.522+0000] {tasks.py:383} INFO - Price of 1578081 - JOELHO90SOLDAVEL: R$ 11,86
+[2022-10-04T19:47:15.522+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:47:19.153+0000] {tasks.py:383} INFO - Price of 1578257 - CURVA90: R$ 17,90
+[2022-10-04T19:47:19.154+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:47:22.790+0000] {tasks.py:383} INFO - Price of 1578270 - UNIAODEPVCSOLDAVEL: R$ 8,90
+[2022-10-04T19:47:22.791+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:47:26.118+0000] {tasks.py:383} INFO - Price of 1567342 - CURVA90EMPVCPARAESGOTO: R$ 3,90
+[2022-10-04T19:47:26.118+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:47:29.518+0000] {tasks.py:383} INFO - Price of 1578121 - CURVAEMPVCRIGIDO90: R$ 9,64
+[2022-10-04T19:47:29.519+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:47:35.999+0000] {tasks.py:383} INFO - Price of 1578206 - ADITIVOPLASTIFICANTEPARACONCRETOEARGAMASSA: R$ 213,90
+[2022-10-04T19:47:36.004+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:47:40.324+0000] {tasks.py:383} INFO - Price of 1578262 - JOELHO90EMPVCSOLDAVEL: R$ 15,90
+[2022-10-04T19:47:40.324+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:47:46.321+0000] {tasks.py:383} INFO - Price of 1578089 - TEDEPVCSOLDAVEL: R$ 5,74
+[2022-10-04T19:47:46.322+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:47:49.840+0000] {tasks.py:383} INFO - Price of 1578091 - REGISTROESFERAEMMETAL: R$ 57,90
+[2022-10-04T19:47:49.841+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:47:53.326+0000] {tasks.py:383} INFO - Price of 1578158 - LUVASOLDAVELEMPVC: R$ 5,87
+[2022-10-04T19:47:53.326+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:47:56.723+0000] {tasks.py:383} INFO - Price of 1578190 - ARANDELABOXDEALUMINIOEACRILICO: R$ 219,90
+[2022-10-04T19:47:56.723+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:00.209+0000] {tasks.py:383} INFO - Price of 1578136 - CONEXAODEJOELHO90EMPVC: R$ 3,58
+[2022-10-04T19:48:00.209+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:03.579+0000] {tasks.py:383} INFO - Price of 1578142 - LUVADEPVC: R$ 6,82
+[2022-10-04T19:48:03.579+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:06.998+0000] {tasks.py:383} INFO - Price of 1578164 - NIPEL: R$ 3,90
+[2022-10-04T19:48:06.999+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:10.449+0000] {tasks.py:383} INFO - Price of 1578246 - BUCHASOLDAVEL: R$ 4,90
+[2022-10-04T19:48:10.449+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:13.878+0000] {tasks.py:383} INFO - Price of 1578157 - LUVASOLDAVELEMPVC: R$ 5,58
+[2022-10-04T19:48:13.879+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:17.282+0000] {tasks.py:383} INFO - Price of 1578171 - TEEMPVCSOLDAVEL: R$ 1,60
+[2022-10-04T19:48:17.282+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:20.758+0000] {tasks.py:383} INFO - Price of 1578112 - CONEXAOCAPDEPVCPARAAGUAROSCAVEL: R$ 1,17
+[2022-10-04T19:48:20.759+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:24.116+0000] {tasks.py:383} INFO - Price of 1578207 - CUBADEEMBUTIREMACOINOXPOLIDO: R$ 269,90
+[2022-10-04T19:48:24.117+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:27.541+0000] {tasks.py:383} INFO - Price of 1578088 - TEDEREDUCAOEMPVCSOLDAVELCBUCHALATAO: R$ 7,90
+[2022-10-04T19:48:27.542+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:30.981+0000] {tasks.py:383} INFO - Price of 1578124 - CONEXAOJOELHO45DEPVCPARAESGOTO: R$ 3,90
+[2022-10-04T19:48:30.982+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:34.455+0000] {tasks.py:383} INFO - Price of 1578127 - JOELHO45EMPVCSOLDAVEL: R$ 8,90
+[2022-10-04T19:48:34.456+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:37.869+0000] {tasks.py:383} INFO - Price of 1578172 - TEEMPVCSOLDAVEL: R$ 42,96
+[2022-10-04T19:48:37.870+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:41.344+0000] {tasks.py:383} INFO - Price of 1578186 - CONEXAOTEDEPVCPARAESGOTOPREDIAL: R$ 14,07
+[2022-10-04T19:48:41.344+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:44.720+0000] {tasks.py:383} INFO - Price of 1567049 - JOELHO90DEPVCPARAESGOTO: R$ 3,76
+[2022-10-04T19:48:44.720+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:48.133+0000] {tasks.py:383} INFO - Price of 1578101 - ADAPTADORSOLDAVEL: R$ 2,43
+[2022-10-04T19:48:48.133+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:51.591+0000] {tasks.py:383} INFO - Price of 1578128 - JOELHO45SOLDAVEL: R$ 4,64
+[2022-10-04T19:48:51.592+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:54.982+0000] {tasks.py:383} INFO - Price of 1578266 - LUVADEPVCSIMPLESPARAESGOTO: R$ 5,52
+[2022-10-04T19:48:54.983+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:48:58.384+0000] {tasks.py:383} INFO - Price of 1578120 - CURVAEMPVCRIGIDO90: R$ 8,44
+[2022-10-04T19:48:58.385+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:01.841+0000] {tasks.py:383} INFO - Price of 1578143 - LUVADEPVC: R$ 1,71
+[2022-10-04T19:49:01.841+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:05.193+0000] {tasks.py:383} INFO - Price of 1567334 - CURVA90EMPVCPARAESGOTO: R$ 6,90
+[2022-10-04T19:49:05.193+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:08.465+0000] {tasks.py:383} INFO - Price of 1578147 - LUVADEPVCSIMPLESPARAESGOTO: R$ 1,62
+[2022-10-04T19:49:08.465+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:11.807+0000] {tasks.py:383} INFO - Price of 1578144 - LUVAROSCAVEL: R$ 2,16
+[2022-10-04T19:49:11.808+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:15.264+0000] {tasks.py:383} INFO - Price of 1578268 - LUVADEPVCSOLDAVEL: R$ 15,90
+[2022-10-04T19:49:15.265+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:18.668+0000] {tasks.py:383} INFO - Price of 1567338 - JOELHO45EMPVCSOLDAVEL: R$ 2,90
+[2022-10-04T19:49:18.669+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:22.149+0000] {tasks.py:383} INFO - Price of 1567372 - CURVA45EMPVCPARAESGOTO: R$ 30,90
+[2022-10-04T19:49:22.150+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:25.547+0000] {tasks.py:383} INFO - Price of 1578132 - CONEXAOJOELHO90DEPVCRIGIDOROSQUEAVEL: R$ 3,65
+[2022-10-04T19:49:25.547+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:28.958+0000] {tasks.py:383} INFO - Price of 1578166 - NIPEL: R$ 0,90
+[2022-10-04T19:49:28.959+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:32.364+0000] {tasks.py:383} INFO - Price of 1578198 - TUBODEPVCSOLDAVEL: R$ 15,88
+[2022-10-04T19:49:32.365+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:35.848+0000] {tasks.py:383} INFO - Price of 1578269 - NIPEL: R$ 1,90
+[2022-10-04T19:49:35.849+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:39.249+0000] {tasks.py:383} INFO - Price of 1578110 - CAPEMPVCROSCAVEL: R$ 0,90
+[2022-10-04T19:49:39.250+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:42.646+0000] {tasks.py:383} INFO - Price of 1578193 - TUBODEPVCRIGIDOSOLDAVEL: R$ 5,01
+[2022-10-04T19:49:42.646+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:46.301+0000] {tasks.py:383} INFO - Price of 1578248 - BUCHASOLDAVELEMPVC: R$ 4,80
+[2022-10-04T19:49:46.301+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:49.752+0000] {tasks.py:383} INFO - Price of 1578261 - JOELHO90EMPVCSOLDAVEL: R$ 4,73
+[2022-10-04T19:49:49.753+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:53.208+0000] {tasks.py:383} INFO - Price of 1578134 - JOELHO90DEPVCSOLDAVEL: R$ 0,86
+[2022-10-04T19:49:53.209+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:49:56.615+0000] {tasks.py:383} INFO - Price of 1578096 - ADAPTADORSOLDAVEL: R$ 16,79
+[2022-10-04T19:49:56.616+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:00.033+0000] {tasks.py:383} INFO - Price of 1578139 - JUNCAOSIMPLESDEPVCPARAESGOTO: R$ 12,11
+[2022-10-04T19:50:00.033+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:03.514+0000] {tasks.py:383} INFO - Price of 1578174 - TEDEREDUCAOEMPVCSOLDAVEL: R$ 5,90
+[2022-10-04T19:50:03.515+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:07.273+0000] {tasks.py:383} INFO - Price of 1578129 - JOELHO90DEPVCPARAESGOTO: R$ 9,34
+[2022-10-04T19:50:07.274+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:10.708+0000] {tasks.py:383} INFO - Price of 1578145 - LUVADEPVCSIMPLESPARAESGOTO: R$ 8,22
+[2022-10-04T19:50:10.709+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:14.777+0000] {tasks.py:383} INFO - Price of 1578150 - LUVASIMPLESDEPVCPARAESGOTO: R$ 7,34
+[2022-10-04T19:50:14.777+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:18.365+0000] {tasks.py:383} INFO - Price of 1578210 - PORTALISALAMINADECURUPIXA: R$ 219,83
+[2022-10-04T19:50:18.365+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:21.996+0000] {tasks.py:383} INFO - Price of 1578245 - BUCHASOLDAVEL: R$ 1,90
+[2022-10-04T19:50:21.996+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:25.521+0000] {tasks.py:383} INFO - Price of 1567321 - JOELHO45EMPVCSOLDAVEL: R$ 0,90
+[2022-10-04T19:50:25.522+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:29.073+0000] {tasks.py:383} INFO - Price of 1578108 - CAPPARAESGOTO: R$ 5,38
+[2022-10-04T19:50:29.073+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:32.801+0000] {tasks.py:383} INFO - Price of 1578160 - LUVASOLDAVELECOMROSCA: R$ 1,90
+[2022-10-04T19:50:32.802+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:36.846+0000] {tasks.py:383} INFO - Price of 1578161 - LUVASOLDAVELECOMROSCA: R$ 1,42
+[2022-10-04T19:50:36.847+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:40.376+0000] {tasks.py:383} INFO - Price of 1578162 - LUVAEMPVCSOLDAVEL: R$ 5,90
+[2022-10-04T19:50:40.377+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:44.247+0000] {tasks.py:383} INFO - Price of 1578165 - NIPEL: R$ 5,31
+[2022-10-04T19:50:44.248+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:47.626+0000] {tasks.py:383} INFO - Price of 1578199 - TUBODEPVCRIGIDOSOLDAVEL: R$ 24,23
+[2022-10-04T19:50:47.627+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:51.638+0000] {tasks.py:383} INFO - Price of 1578272 - TOMADA: R$ 5,99
+[2022-10-04T19:50:51.639+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:55.051+0000] {tasks.py:383} INFO - Price of 1567335 - CURVA90EMPVCPARAESGOTO: R$ 23,90
+[2022-10-04T19:50:55.052+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:50:58.449+0000] {tasks.py:383} INFO - Price of 1578094 - BOIAPARACAIXADAGUAEMMETAL: R$ 86,90
+[2022-10-04T19:50:58.449+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:01.873+0000] {tasks.py:383} INFO - Price of 1578173 - TE90DEPVCRIGIDOSOLDAVEL: R$ 9,75
+[2022-10-04T19:51:01.873+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:05.364+0000] {tasks.py:383} INFO - Price of 1578209 - PORTALISALAMINADECURUPIXA: R$ 219,83
+[2022-10-04T19:51:05.365+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:08.746+0000] {tasks.py:383} INFO - Price of 1578244 - BUCHASOLDAVEL: R$ 4,61
+[2022-10-04T19:51:08.746+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:12.951+0000] {tasks.py:383} INFO - Price of 1578252 - CURVA45SOLDAVEL: R$ 5,90
+[2022-10-04T19:51:12.951+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:16.998+0000] {tasks.py:383} INFO - Price of 1578259 - JOELHO90ROSCAVEL: R$ 1,90
+[2022-10-04T19:51:16.999+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:20.380+0000] {tasks.py:383} INFO - Price of 1578102 - ADAPTADORSOLDAVEL: R$ 1,90
+[2022-10-04T19:51:20.381+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:24.595+0000] {tasks.py:383} INFO - Price of 1578156 - LUVASOLDAVELEMPVC: R$ 2,73
+[2022-10-04T19:51:24.596+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:28.064+0000] {tasks.py:383} INFO - Price of 1578183 - CONEXAOTEDEPVCPARAESGOTOPREDIAL: R$ 6,60
+[2022-10-04T19:51:28.064+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:31.500+0000] {tasks.py:383} INFO - Price of 1578258 - JOELHO45SOLDAVEL: R$ 33,91
+[2022-10-04T19:51:31.500+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:34.852+0000] {tasks.py:383} INFO - Price of 1578138 - JOELHO90EMPVCSOLDAVEL: R$ 6,52
+[2022-10-04T19:51:34.853+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:38.259+0000] {tasks.py:383} INFO - Price of 1578208 - CAIXADAGUAEMPOLIETILENO: R$ 607,35
+[2022-10-04T19:51:38.260+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:41.632+0000] {tasks.py:383} INFO - Price of 1578097 - ADAPTADORSOLDAVEL: R$ 0,90
+[2022-10-04T19:51:41.633+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:45.179+0000] {tasks.py:383} INFO - Price of 1578187 - UNIAOEMPVCSOLDAVEL: R$ 10,36
+[2022-10-04T19:51:45.179+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:48.578+0000] {tasks.py:383} INFO - Price of 1578212 - MASSACORRIDAACRILICA: R$ 58,90
+[2022-10-04T19:51:48.579+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:52.037+0000] {tasks.py:383} INFO - Price of 1578213 - COLUNAPARALAVATORIODELOUCA: R$ 88,90
+[2022-10-04T19:51:52.037+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:55.443+0000] {tasks.py:383} INFO - Price of 1578251 - CAPEMPVCROSCAVEL: R$ 1,90
+[2022-10-04T19:51:55.444+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:51:58.899+0000] {tasks.py:383} INFO - Price of 1578149 - LUVADEPVCSIMPLESPARAESGOTO: R$ 3,85
+[2022-10-04T19:51:58.900+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:02.380+0000] {tasks.py:383} INFO - Price of 1578177 - TEDEREDUCAOEMPVCSOLDAVEL: R$ 1,90
+[2022-10-04T19:52:02.380+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:05.803+0000] {tasks.py:383} INFO - Price of 1578195 - TUBODEPVCSOLDAVEL: R$ 7,36
+[2022-10-04T19:52:05.803+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:09.327+0000] {tasks.py:383} INFO - Price of 1578085 - LUVASOLDAVEL: R$ 4,90
+[2022-10-04T19:52:09.327+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:12.746+0000] {tasks.py:383} INFO - Price of 1578100 - ADAPTADORSOLDAVEL: R$ 0,90
+[2022-10-04T19:52:12.747+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:16.261+0000] {tasks.py:383} INFO - Price of 1578151 - LUVAPVCSOLDAVELECOMROSCA: R$ 0,90
+[2022-10-04T19:52:16.262+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:19.690+0000] {tasks.py:383} INFO - Price of 1578152 - LUVASOLDAVELECOMROSCA: R$ 1,22
+[2022-10-04T19:52:19.691+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:23.097+0000] {tasks.py:383} INFO - Price of 1578203 - COLAADESIVA: R$ 190,51
+[2022-10-04T19:52:23.097+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:26.646+0000] {tasks.py:383} INFO - Price of 1578084 - LUVASOLDAVEL: R$ 3,90
+[2022-10-04T19:52:26.647+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:30.092+0000] {tasks.py:383} INFO - Price of 1578247 - BUCHASOLDAVELEMPVC: R$ 4,84
+[2022-10-04T19:52:30.092+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:33.654+0000] {tasks.py:383} INFO - Price of 1578249 - BUCHASOLDAVELEMPVC: R$ 5,11
+[2022-10-04T19:52:33.654+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:37.111+0000] {tasks.py:383} INFO - Price of 1578180 - TEDEREDUCAOEMPVCPARAESGOTO: R$ 13,59
+[2022-10-04T19:52:37.111+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:40.549+0000] {tasks.py:383} INFO - Price of 1578182 - TEEMPVCPARAESGOTO: R$ 6,90
+[2022-10-04T19:52:40.550+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:43.900+0000] {tasks.py:383} INFO - Price of 1578211 - PORTALISALAMINADECURUPIXA: R$ 320,90
+[2022-10-04T19:52:43.900+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:47.278+0000] {tasks.py:383} INFO - Price of 1578086 - LUVASOLDAVEL: R$ 9,52
+[2022-10-04T19:52:47.279+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:50.727+0000] {tasks.py:383} INFO - Price of 1578113 - CAPDEPVCSOLDAVEL: R$ 1,06
+[2022-10-04T19:52:50.727+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:54.141+0000] {tasks.py:383} INFO - Price of 1578255 - CURVA90: R$ 2,90
+[2022-10-04T19:52:54.142+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:52:57.536+0000] {tasks.py:383} INFO - Price of 1578260 - JOELHO90ROSCAVEL: R$ 2,90
+[2022-10-04T19:52:57.536+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:00.946+0000] {tasks.py:383} INFO - Price of 1570334 - JOELHO90EMPVCSOLDAVEL: R$ 3,90
+[2022-10-04T19:53:00.947+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:04.354+0000] {tasks.py:383} INFO - Price of 1578168 - NIPEL: R$ 1,42
+[2022-10-04T19:53:04.355+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:07.785+0000] {tasks.py:383} INFO - Price of 1578275 - CARRINHODEMAOPINTADO: R$ 177,90
+[2022-10-04T19:53:07.785+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:11.178+0000] {tasks.py:383} INFO - Price of 1578098 - ADAPTADORSOLDAVEL: R$ 0,45
+[2022-10-04T19:53:11.178+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:14.693+0000] {tasks.py:383} INFO - Price of 1578117 - CURVA45SOLDAVEL: R$ 9,32
+[2022-10-04T19:53:14.693+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:18.123+0000] {tasks.py:383} INFO - Price of 1578178 - TEDEREDUCAOEMPVC90: R$ 6,66
+[2022-10-04T19:53:18.124+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:21.499+0000] {tasks.py:383} INFO - Price of 1578192 - TUBODEPVCSOLDAVEL: R$ 5,90
+[2022-10-04T19:53:21.500+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:24.846+0000] {tasks.py:383} INFO - Price of 1566863 - CURVAEMPVCRIGIDO90: R$ 27,36
+[2022-10-04T19:53:24.847+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:28.256+0000] {tasks.py:383} INFO - Price of 1578092 - REGISTRODEESFERA: R$ 39,90
+[2022-10-04T19:53:28.256+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:31.662+0000] {tasks.py:383} INFO - Price of 1578125 - JOELHO45DEPVCPARAESGOTO: R$ 8,62
+[2022-10-04T19:53:31.662+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:35.145+0000] {tasks.py:383} INFO - Price of 1578167 - NIPEL: R$ 2,19
+[2022-10-04T19:53:35.146+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:38.529+0000] {tasks.py:383} INFO - Price of 1578215 - MANGUEIRATRANSPIRANTEPARAJARDIM: R$ 99,90
+[2022-10-04T19:53:38.530+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:41.952+0000] {tasks.py:383} INFO - Price of 1578250 - BUCHASOLDAVELEMPVC: R$ 7,75
+[2022-10-04T19:53:41.953+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:45.337+0000] {tasks.py:383} INFO - Price of 1578107 - CAIXADEGORDURADEPOLIPROPILENO: R$ 138,90
+[2022-10-04T19:53:45.338+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:48.747+0000] {tasks.py:383} INFO - Price of 1578146 - LUVADEPVCSIMPLESPARAESGOTO: R$ 1,40
+[2022-10-04T19:53:48.747+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:52.547+0000] {tasks.py:383} INFO - Price of 1578148 - LUVADEPVCSIMPLESPARAESGOTO: R$ 2,05
+[2022-10-04T19:53:52.547+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:55.932+0000] {tasks.py:383} INFO - Price of 1578253 - CURVA90DEPVCPARAESGOTO: R$ 12,90
+[2022-10-04T19:53:55.933+0000] {tasks.py:322} INFO - Printing information
+[2022-10-04T19:53:55.991+0000] {tasks.py:410} INFO - Saved screenshots and prices
+[2022-10-04T19:53:56.007+0000] {tasks.py:241} INFO - Test passed
+[2022-10-04T19:53:56.064+0000] {tasks.py:267} INFO - Requested prices: 188
+[2022-10-04T19:53:56.064+0000] {tasks.py:268} INFO - Scraped prices: 188
+[2022-10-04T19:53:56.064+0000] {tasks.py:269} INFO - Day of the scraping: 04/10/2022
+[2022-10-04T19:53:56.190+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-10-04T19:53:56.358+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=constrular, task_id=colector, execution_date=20220921T000000, start_date=20221004T194239, end_date=20221004T195356
+[2022-10-04T19:53:56.491+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-10-04T19:53:56.657+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

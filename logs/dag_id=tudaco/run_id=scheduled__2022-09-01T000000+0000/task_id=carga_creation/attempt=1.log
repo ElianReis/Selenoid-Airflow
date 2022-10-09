@@ -1,0 +1,44 @@
+[2022-10-03T12:54:02.805+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tudaco.carga_creation scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-03T12:54:02.826+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tudaco.carga_creation scheduled__2022-09-01T00:00:00+00:00 [queued]>
+[2022-10-03T12:54:02.827+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-03T12:54:02.828+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-10-03T12:54:02.829+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-03T12:54:02.853+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): carga_creation> on 2022-09-01 00:00:00+00:00
+[2022-10-03T12:54:02.872+0000] {standard_task_runner.py:54} INFO - Started process 1164 to run task
+[2022-10-03T12:54:02.879+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tudaco', 'carga_creation', 'scheduled__2022-09-01T00:00:00+00:00', '--job-id', '401', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmp8ku9nym9']
+[2022-10-03T12:54:02.881+0000] {standard_task_runner.py:83} INFO - Job 401: Subtask carga_creation
+[2022-10-03T12:54:02.882+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-10-03T12:54:03.710+0000] {task_command.py:384} INFO - Running <TaskInstance: tudaco.carga_creation scheduled__2022-09-01T00:00:00+00:00 [running]> on host 9a36b0424536
+[2022-10-03T12:54:03.808+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tudaco
+AIRFLOW_CTX_TASK_ID=carga_creation
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-01T00:00:00+00:00
+[2022-10-03T12:54:03.809+0000] {tasks.py:530} INFO - Reading results from collect dataframe
+[2022-10-03T12:54:03.810+0000] {tasks.py:39} INFO - Defining DEC to export information
+[2022-10-03T12:54:03.833+0000] {tasks.py:536} INFO - Renaming columns
+[2022-10-03T12:54:03.835+0000] {tasks.py:539} INFO - Creating column with print information
+[2022-10-03T12:54:03.842+0000] {tasks.py:550} INFO - Fill nan on dataset
+[2022-10-03T12:54:03.847+0000] {tasks.py:553} INFO - Adapting price to the Carga file
+[2022-10-03T12:54:03.852+0000] {tasks.py:453} INFO - Carga being prepared for expected data: 10/10/2022
+[2022-10-03T12:54:03.854+0000] {tasks.py:559} INFO - Filling null values
+[2022-10-03T12:54:03.854+0000] {tasks.py:487} INFO - Naming the price null values
+[2022-10-03T12:54:03.857+0000] {tasks.py:490} INFO - Fill Sinonimous column
+[2022-10-03T12:54:03.860+0000] {tasks.py:497} INFO - Creating a justification for null prices
+[2022-10-03T12:54:03.863+0000] {tasks.py:504} INFO - Fill URL column
+[2022-10-03T12:54:03.865+0000] {tasks.py:511} INFO - Fill date column
+[2022-10-03T12:54:03.866+0000] {tasks.py:562} INFO - Fill regions column
+[2022-10-03T12:54:03.869+0000] {tasks.py:568} INFO - Reordering column
+[2022-10-03T12:54:03.869+0000] {tasks.py:570} INFO - Finishing the process
+[2022-10-03T12:54:03.870+0000] {tasks.py:571} INFO - Total prices: 58
+[2022-10-03T12:54:03.889+0000] {warnings.py:110} WARNING - /opt/***/dags/tasks.py:581: FutureWarning: As the xlwt package is no longer maintained, the xlwt engine will be removed in a future version of pandas. This is the only engine in pandas that supports writing in the xls format. Install openpyxl and write to an xlsx file instead. You can set the option io.excel.xls.writer to 'xlwt' to silence this warning. While this option is deprecated and will also raise a warning, it can be globally set and the warning suppressed.
+  ).to_excel(f"{EXPORT}", index=False)
+
+[2022-10-03T12:54:04.016+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-10-03T12:54:04.039+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=tudaco, task_id=carga_creation, execution_date=20220901T000000, start_date=20221003T125402, end_date=20221003T125404
+[2022-10-03T12:54:04.096+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-10-03T12:54:04.134+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

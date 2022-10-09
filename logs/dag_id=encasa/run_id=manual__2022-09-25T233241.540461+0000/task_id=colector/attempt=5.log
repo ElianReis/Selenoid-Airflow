@@ -1,0 +1,55 @@
+[2022-09-25T23:46:03.245+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: encasa.colector manual__2022-09-25T23:32:41.540461+00:00 [queued]>
+[2022-09-25T23:46:03.253+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: encasa.colector manual__2022-09-25T23:32:41.540461+00:00 [queued]>
+[2022-09-25T23:46:03.253+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-25T23:46:03.253+0000] {taskinstance.py:1363} INFO - Starting attempt 5 of 5
+[2022-09-25T23:46:03.254+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-25T23:46:03.267+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-09-25 23:32:41.540461+00:00
+[2022-09-25T23:46:03.271+0000] {standard_task_runner.py:54} INFO - Started process 144 to run task
+[2022-09-25T23:46:03.273+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'encasa', 'colector', 'manual__2022-09-25T23:32:41.540461+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpmkskkwgh']
+[2022-09-25T23:46:03.273+0000] {standard_task_runner.py:83} INFO - Job 79: Subtask colector
+[2022-09-25T23:46:03.274+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-09-25T23:46:03.659+0000] {task_command.py:384} INFO - Running <TaskInstance: encasa.colector manual__2022-09-25T23:32:41.540461+00:00 [running]> on host 4f5142878d09
+[2022-09-25T23:46:03.713+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=encasa
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-25T23:32:41.540461+00:00
+AIRFLOW_CTX_TRY_NUMBER=5
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-25T23:32:41.540461+00:00
+[2022-09-25T23:46:03.714+0000] {tasks.py:43} INFO - Defining DEC to export information
+[2022-09-25T23:46:03.718+0000] {tasks.py:341} INFO - Reading prep dataframe
+[2022-09-25T23:46:03.723+0000] {tasks.py:146} INFO - Instantiating the Browser with the requested settings
+[2022-09-25T23:46:03.723+0000] {tasks.py:151} INFO - Browser configured
+[2022-09-25T23:46:03.724+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2022-09-25T23:46:03.757+0000] {logger.py:11} INFO - Get LATEST geckodriver version for None firefox
+[2022-09-25T23:46:03.757+0000] {logger.py:11} INFO - GH_TOKEN will be used to perform requests
+[2022-09-25T23:46:04.074+0000] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/geckodriver/linux64/0.31/geckodriver] found in cache
+[2022-09-25T23:46:04.084+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/tasks.py", line 343, in colector
+    browser = config_browser(config)
+  File "/opt/airflow/dags/tasks.py", line 153, in config_browser
+    service=FirefoxService(GeckoDriverManager().install()), options=options
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/firefox/webdriver.py", line 180, in __init__
+    keep_alive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 270, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 363, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+
+[2022-09-25T23:46:04.094+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=encasa, task_id=colector, execution_date=20220925T233241, start_date=20220925T234603, end_date=20220925T234604
+[2022-09-25T23:46:04.104+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 79 for task colector (Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+; 144)
+[2022-09-25T23:46:04.127+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-09-25T23:46:04.143+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

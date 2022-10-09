@@ -1,0 +1,39 @@
+[2022-10-09T23:19:43.834+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: cemaco.colector scheduled__2022-08-11T00:00:00+00:00 [queued]>
+[2022-10-09T23:19:43.843+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: cemaco.colector scheduled__2022-08-11T00:00:00+00:00 [queued]>
+[2022-10-09T23:19:43.844+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-09T23:19:43.844+0000] {taskinstance.py:1363} INFO - Starting attempt 2 of 2
+[2022-10-09T23:19:43.844+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-09T23:19:43.857+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): colector> on 2022-08-11 00:00:00+00:00
+[2022-10-09T23:19:43.861+0000] {standard_task_runner.py:54} INFO - Started process 595 to run task
+[2022-10-09T23:19:43.863+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'cemaco', 'colector', 'scheduled__2022-08-11T00:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/dag.py', '--cfg-path', '/tmp/tmpxoyrfgdj']
+[2022-10-09T23:19:43.864+0000] {standard_task_runner.py:83} INFO - Job 13: Subtask colector
+[2022-10-09T23:19:43.864+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/dag.py
+[2022-10-09T23:19:44.129+0000] {task_command.py:384} INFO - Running <TaskInstance: cemaco.colector scheduled__2022-08-11T00:00:00+00:00 [running]> on host 7dcbfa2899a4
+[2022-10-09T23:19:44.187+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=cemaco
+AIRFLOW_CTX_TASK_ID=colector
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-11T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-11T00:00:00+00:00
+[2022-10-09T23:19:44.190+0000] {tasks.py:241} INFO - Reading prep dataframe
+[2022-10-09T23:19:44.219+0000] {tasks.py:122} INFO - Instantiating the Browser with the requested settings
+[2022-10-09T23:19:48.562+0000] {tasks.py:126} INFO - Browser configured
+[2022-10-09T23:19:48.562+0000] {tasks.py:181} INFO - Removing nan URL values
+[2022-10-09T23:19:48.563+0000] {tasks.py:182} INFO - Requested prices before: 35
+[2022-10-09T23:19:48.566+0000] {tasks.py:187} INFO - Requested prices after: 35
+[2022-10-09T23:19:48.566+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/tasks.py", line 247, in colector
+    if "classic" in config["method"]["name"]:
+KeyError: 'method'
+[2022-10-09T23:19:48.584+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=cemaco, task_id=colector, execution_date=20220811T000000, start_date=20221009T231943, end_date=20221009T231948
+[2022-10-09T23:19:48.596+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 13 for task colector ('method'; 595)
+[2022-10-09T23:19:48.611+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-10-09T23:19:48.630+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
